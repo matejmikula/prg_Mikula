@@ -31,7 +31,7 @@ namespace wofkolmao
                     Console.WriteLine("je to remíza zkus to znova");
                 }
                 else if (
-                    (hracVolba == "kamen" && protivnikVolba == "nuzky") ||
+                    (hracVolba == "kamen" && protivnikVolba == "nuzky") ||/* chatGPT helpnul */
                     (hracVolba == "nuzky" && protivnikVolba == "papir") ||
                     (hracVolba == "papir" && protivnikVolba == "kamen")
                     )
