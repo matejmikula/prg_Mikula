@@ -16,7 +16,7 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            double num1, num2; // zadefinovani cisel a operace
+            double num1, num2; // zadefinovani cisel, operace a vysledku
             string operace;
             double vysledek = 0;
 
