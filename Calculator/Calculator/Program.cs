@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,144 +16,100 @@ namespace Calculator
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("1. napiš první číslo.");
-            Console.WriteLine("2. napiš druhé číslo.");
-            Console.WriteLine("3. napiš jednu z těchto operací +; -; *; /; mocnina.");
-            Console.WriteLine("4. pokud napíšeš vše dobře tak by měl mít výsledek ;).");
-            Console.WriteLine("5. doplňující info: Pokud je za potřebí pouze jedno číslo k výpočtu (např. odmocnina), kalkulačka vždy počítá s prvním zadaným číslem.");
             double num1, num2;
-            string a, b, operace;
-            a = Console.ReadLine();
-            b = Console.ReadLine();
-            operace = Console.ReadLine();
+            string operace;
             double vysledek = 0;
-            {
-                if (double.TryParse(a, out num1) && double.TryParse(b, out num2))
-                {
 
-                    /*if (operace == "+")
+            while (true) //začátek cyklu
+            {
+                Console.WriteLine("1. napiš jednu z těchto operací +; -; *; /; mocnina; odmocnina; faktorial. ");
+                operace = Console.ReadLine();
+
+                Console.WriteLine("2. napiš první číslo.");
+                string a;
+                a = Console.ReadLine();
+
+                Console.WriteLine("3. napiš druhé číslo (nebo mocninu)");
+                Console.WriteLine("    (pokud počítáš pouze s jedním čísle [v této calc.:odmocnina nebo faktorial] tak zde napiš libovolné číslo)"); //nenašel jsem na internetu jiné oddělení pro odstavce než takéto hloupé bohužel
+                string b;
+                b = Console.ReadLine();
+
+                if (double.TryParse(a, out num1) && double.TryParse(b, out num2)) //přehozené rovnou do double místo int nebo float
+                {
+                    if (operace == "+") 
                     {
                         vysledek = num1 + num2;
-                        Console.WriteLine(vysledek);
                     }
                     else if (operace == "-")
                     {
                         vysledek = num1 - num2;
-                        Console.WriteLine(vysledek);
                     }
                     else if (operace == "*")
                     {
                         vysledek = num1 * num2;
-                        Console.WriteLine(vysledek);
                     }
                     else if (operace == "/")
                     {
-                        if (num2 == 0)
+                        if (num2 == 0) //tento if zamezí dělit nulou, se kterou tato kalkulačka neumí počítat
                         {
                             Console.WriteLine("nulou nelze dělit.");
+                            continue;
                         }
                         else
                         {
                             vysledek = num1 / num2;
-                            Console.WriteLine(vysledek);
                         }
                     }
                     else if (operace == "mocnina")
                     {
                         vysledek = Math.Pow(num1, num2);
-                        Console.WriteLine(vysledek);
                     }
                     else if (operace == "odmocnina")
                     {
                         vysledek = Math.Sqrt(num1);
-                        Console.WriteLine(vysledek);
                     }
-                    else if (operace == "")
+                    else if (operace == "faktorial") 
                     {
-                        
+                        vysledek = Factorial((int)num1);
                     }
+                    else
+                    {
+                        Console.WriteLine("Neplatná operace, zkus to znovu."); // upozornění na chybu v zápisu operace, potom začíná celý výpočet znova
+                        vysledek = 00000;
+                        continue;
+                    }
+                    Console.WriteLine("4. Vše si zadal dobře tady máš výsledek ;p");
+                    Console.WriteLine(vysledek);
                 }
                 else
                 {
-                    Console.WriteLine("Neplatný vstup, zkontroluj si, že si vše správně napsal.");
+                    Console.WriteLine("Neplatný vstup, zkontroluj si, že si vše správně napsal."); // to samý jako předchozí else akorát pro to aby vstup byl vždy číslo 
+                    continue;
+                }
+
+                Console.WriteLine("Chceš provést další výpočet? (Y/N)"); // možnost opakování cyklu (začátek nového příkladu)
+                string novyPocet = Console.ReadLine().ToLower();
+                if (novyPocet != "y")
+                {
+                    break; //konec cyklu
                 }
             }
-                    Původní verze s Ify
-            */
-                    switch (operace)
-                    {
-                        case "+":
-                            vysledek = num1 + num2;
-                            Console.WriteLine(vysledek);
-                            break;
-                        case "-":
-                            vysledek = num1 - num2;
-                            Console.WriteLine(vysledek);
-                            break;
-                        case "*":
-                            vysledek = num1 * num2;
-                            Console.WriteLine(vysledek);
-                            break;
-                        case "/":
-                            if (num2 == 0)
-                            {
-                                Console.WriteLine("nulou nelze dělit.");
-                            }
-                            else
-                            {
-                                vysledek = num1 / num2;
-                                Console.WriteLine(vysledek);
-                            }
-                            break;
-                        case "mocnina":
-                            vysledek = Math.Pow(num1, num2);
-                            Console.WriteLine(vysledek);
-                            break;
-                        case "odmocnina":
-                            vysledek = Math.Sqrt(num1);
-                            Console.WriteLine(vysledek);
-                            break;
-                        case "":
-                            break;
-                        default:
-                            Console.WriteLine("Neplatný vstup, zkontroluj si, že si vše správně napsal.");
-                            break;
-                    }
-                }
-            }
-
-
-
-
-
-                    /*
-                     * Pokud se budes chtit na neco zeptat a zrovna budu pomahat jinde, zkus se zeptat ChatGPT ;) - https://chat.openai.com/
-                     * 
-                     * ZADANI
-                     * Vytvor program ktery bude fungovat jako kalkulacka. Kroky programu budou nasledujici:
-                     * 1) Nacte vstup pro prvni cislo od uzivatele (vyuzijte metodu Console.ReadLine() - https://learn.microsoft.com/en-us/dotnet/api/system.console.readline?view=netframework-4.8.
-                     * 2) Zkonvertuje vstup od uzivatele ze stringu do integeru - https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/how-to-convert-a-string-to-a-number.
-                     * 3) Nacte vstup pro druhe cislo od uzivatele a zkonvertuje ho do integeru. (zopakovani kroku 1 a 2 pro druhe cislo)
-                     * 4) Nacte vstup pro ciselnou operaci. Rozmysli si, jak operace nazves. Muze to byt "soucet", "rozdil" atd. nebo napr "+", "-", nebo jakkoliv jinak.
-                     * 5) Nadefinuj integerovou promennou result a prirad ji prozatimne hodnotu 0.
-                     * 6) Vytvor podminky (if statement), podle kterych urcis, co se bude s cisly dit podle zadane operace
-                     *    a proved danou operaci - https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements.
-                     * 7) Vypis promennou result do konzole
-                     * 
-                     * Mozna rozsireni programu pro rychliky / na doma (na poradi nezalezi):
-                     * 1) Vypis do konzole pred nactenim kazdeho uzivatelova vstupu co po nem chces
-                     * 2) a) Kontroluj, ze uzivatel do vstupu zadal, co mel (cisla, popr. ciselnou operaci). Pokud zadal neco jineho, napis mu, co ma priste zadat a program ukoncete.
-                     * 2) b) To same, co a) ale misto ukonceni programu opakovane cti vstup, dokud uzivatel nezada to, co ma
-                     *       - https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/iteration-statements#the-while-statement
-                     * 3) Umozni uzivateli zadavat i desetinna cisla, tedy prekopej kalkulacku tak, aby umela pracovat s floaty
-                     */
-
-                    //Tento komentar smaz a misto nej zacni psat svuj prdacky kod.
-
-
-
-
-                    Console.ReadKey(); //Toto nech jako posledni radek, aby se program neukoncil ihned, ale cekal na stisk klavesy od uzivatele.
+            Console.ReadKey();
         }
-    }
-}
+        static double Factorial(int n) // rekurzivní funkce pro výpočet faktoriálu z dnešní hodiny upravená (s výpomocí chatGPT), aby fungovala v mojí kalkulačce
+        {
+            if (n < 0)
+            {
+                Console.WriteLine("Faktoriál nelze spočítat pro záporné číslo.");
+                return 0;
+            }
+            double vysledek = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                vysledek *= i;
+            }
+            return vysledek;
+        }
+    } // formatovani/prehlednost kodu mam taky upravene/ou v nekterych castech pres chatGPT, bohuzel si uz presne nepamatuju v kterych oblastech, ale tak jsem to tu aspon zminil
+} // většinu popisku zde mam v cestine a vim ze bych mel psat v AJ napr. spis result misto vysledek, ale doufam ze se to jako chyba pocitat nebude :D
+
