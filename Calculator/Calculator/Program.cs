@@ -25,7 +25,7 @@ namespace Calculator
             a = Console.ReadLine();
             b = Console.ReadLine();
             operace = Console.ReadLine();
-            double vysledek;
+            double vysledek = 0;
             {
                 if (double.TryParse(a, out num1) && double.TryParse(b, out num2))
                 {
