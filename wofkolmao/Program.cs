@@ -14,7 +14,7 @@ namespace wofkolmao
             Console.WriteLine("glhf");
             Console.WriteLine("vložte svou volbu (kamen, nuzky, papir)");
             
-            Random random = new Random(); /* chatGPT helpnul */
+            Random random = new Random(); // chatGPT helpnul
             while (true)
             {
                 string[] moznosti = { "kamen", "nuzky", "papir" };
@@ -31,7 +31,7 @@ namespace wofkolmao
                     Console.WriteLine("je to remíza zkus to znova");
                 }
                 else if (
-                    (hracVolba == "kamen" && protivnikVolba == "nuzky") ||/* chatGPT helpnul */
+                    (hracVolba == "kamen" && protivnikVolba == "nuzky") ||  //chatGPT helpnul
                     (hracVolba == "nuzky" && protivnikVolba == "papir") ||
                     (hracVolba == "papir" && protivnikVolba == "kamen")
                     )
@@ -43,8 +43,8 @@ namespace wofkolmao
                 }
                 Console.WriteLine("Pokud chceš hrát znova napiš ANO");
                 
-                string novaHra = Console.ReadLine();
-                if (novaHra != "ANO")
+                string novaHra = Console.ReadLine().ToLower();
+                if (novaHra != "ano")
                 {
                     break;
                 } 
