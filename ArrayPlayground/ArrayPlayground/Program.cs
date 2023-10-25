@@ -93,7 +93,15 @@ namespace ArrayPlayground
             }
 
             //TODO 10: Vytvoř druhé pole, do kterého zkopíruješ prvky z prvního pole v opačném pořadí.
-
+            int[] reverseArray = new int[100];
+            for (int i = reverseArray.Length - 1; i >= 0; i--)
+            {
+                reverseArray[i] = nums[nums.Length - 1 - i];
+            }
+            for (int i = 0; i < reverseArray.Length; i++)
+            {
+                Console.Write($"{reverseArray[i]}");
+            }
 
             Console.ReadKey();
         }
