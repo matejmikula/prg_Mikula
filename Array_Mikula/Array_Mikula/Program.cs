@@ -10,6 +10,9 @@ namespace Array_Mikula
     {
         static void Main(string[] args)
         {
+        string a, b;
+        
+        int [,] = int UserImput [a,b]
         }
     }
 }
