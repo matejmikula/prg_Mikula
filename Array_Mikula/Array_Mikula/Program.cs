@@ -26,7 +26,7 @@ namespace Array_Mikula
                  Console.Write("\n"); 
              } 
              Console.WriteLine();
-        
+        Console.ReadKey();
         }
     }
 }
