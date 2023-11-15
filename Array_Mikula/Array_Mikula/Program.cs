@@ -10,12 +10,12 @@ namespace Array_Mikula
     {
         static void Main(string[] args)
         {
-        double a, b;
+        int a, b;
         Console.WriteLine("Napiš zde kolik má mít list sloupců:")
-        b = Console.ReadLine();
+        b = Convert.ToInt(Console.ReadLine());
         Console.WriteLine("Napiš zde kolik má mít list řádků:")
-        a = Console.ReadLine();
-        int[,] UserArray = new int[a,b]
+        a = Convert.ToInt(Console.ReadLine());
+        int[,] UserArray = new int[(int)a,(int)b]
             for (int i = 0; i < UserArray.GetLength(0); i++) 
              { 
                  for (int j = 0; j < UserArray.GetLength(1); j++) 
