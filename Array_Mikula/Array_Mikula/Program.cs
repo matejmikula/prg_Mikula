@@ -10,9 +10,11 @@ namespace Array_Mikula
     {
         static void Main(string[] args)
         {
-        string a, b;
-        
+        double a, b;
+        a = Console.ReadLine();
+        b = Console.ReadLine();
         int [,] = int UserImput [a,b]
+        
         }
     }
 }
