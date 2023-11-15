@@ -11,15 +11,17 @@ namespace Array_Mikula
         static void Main(string[] args)
         {
         double a, b;
-        a = Console.ReadLine();
+        Console.WriteLine("Napiš zde kolik má mít list sloupců:")
         b = Console.ReadLine();
-        int [,] = new int [a,b]
-            for (int i = 0; i < My2dArray.GetLength(0); i++) 
+        Console.WriteLine("Napiš zde kolik má mít list řádků:")
+        a = Console.ReadLine();
+        int[,] UserArray = new int[a,b]
+            for (int i = 0; i < UserArray.GetLength(0); i++) 
              { 
-                 for (int j = 0; j < My2dArray.GetLength(1); j++) 
+                 for (int j = 0; j < UserArray.GetLength(1); j++) 
                  { 
-                     My2dArray[i,j] = i * 5 + j + 1; 
-                     Console.Write(My2dArray[i, j] + " "); 
+                     UserArray[i,j] = i * 5 + j + 1; 
+                     Console.Write(UserArray[i, j] + " "); 
                  } 
                  Console.Write("\n"); 
              } 
