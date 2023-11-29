@@ -11,7 +11,6 @@ namespace Array_Mikula
     {
         static void Main(string[] args)
         {
-<<<<<<< HEAD
             int i, j;
 
             Console.WriteLine("Write the number of columns:");
@@ -399,26 +398,7 @@ namespace Array_Mikula
                     Console.WriteLine("The dimensions of the new array must be the same as the first array. Please try again."); //kontrola dimenzí druhého arraye
                 }
             }
+        
         }
-=======
-        int a, b;
-        Console.WriteLine("Napiš zde kolik má mít list sloupců:");
-        b = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Napiš zde kolik má mít list řádků:");
-        a = Convert.ToInt32(Console.ReadLine());
-        int[,] UserArray = new int[a,b];
-            for (int i = 0; i < UserArray.GetLength(0); i++) 
-             { 
-                 for (int j = 0; j < UserArray.GetLength(1); j++) 
-                 { 
-                     UserArray[i,j] = i * 5 + j + 1; 
-                     Console.Write(UserArray[i, j] + " "); 
-                 } 
-                 Console.Write("\n"); 
-             } 
-             Console.WriteLine();
-        Console.ReadKey();
-        }
->>>>>>> parent of d94b080 (array)
     }
 } //s formátováním a opravováním některých chybných operací jsem si pomohl pomocí chatGPT. S vysvětlováním a programováním Arrayi mi hodně pomáhal Vašek (Košler), tak je možný že budu mít některý věci hodně podobný ne-li stejný jako on.
