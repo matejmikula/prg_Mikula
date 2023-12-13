@@ -14,10 +14,16 @@ namespace classes
             public int height;
             public int weight;
             public string name;
+            public string eyeColor;
             public Human partner;
             public Human()
             {
 
+            }
+
+            public Human(string name)
+            {
+                this.name = name;
             }
 
             public Human(int age, int height, int weight, string name)
@@ -45,14 +51,14 @@ namespace classes
                     Human child = new Human();
                     child.age = 0;
                     child.height = (human1.height + human2.height) / 2;
-                    child.weight = (human2.weight + human2.weight) / 2;
+                    child.weight = (human1.weight + human2.weight) / 2;
                     child.name = human1.name + " " + human2.name;
                     child.partner = null;
                     return child;
                 }
                 else
                 {
-                    Console.WriteLine("tady někdo zahýbá");
+                    Console.WriteLine("tady někdo zahýbá...");
                     return new Human ("bastard");
 
                 }
@@ -62,9 +68,9 @@ namespace classes
             {
                 Human child = new Human();
                 child.age = 0;
-                child.height = (height + human2.height) / 2;
-                child.weight = (weight + human2.weight) / 2;
-                child.name = human1.name + " " + human2.name;
+                child.height = (human.height + human2.height) / 2;
+                child.weight = (human.weight + human2.weight) / 2;
+                child.name = human.name + " " + human2.name;
                 child.partner = null;
                 return child;
             }

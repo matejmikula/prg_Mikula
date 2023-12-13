@@ -261,7 +261,7 @@ namespace Array_Mikula
             {
                 for (int j = 0; j < UserArray.GetLength(1); j++)
                 {
-                    TransposedArray[j, i] = UserArray[i, j];
+                    UserArray[i, j] = TransposedArray[j, i];
                     Console.Write($"{UserArray[j, i]} ");
                 }
                 Console.Write("\n");

@@ -69,11 +69,15 @@ namespace ClassPlayground
         {
             int[] intArray = new int[8];
             Rectangle UserRectangle = new Rectangle();
+            
             Console.WriteLine("write width then height of the rectangle");
+            
             UserRectangle.width = Convert.ToInt32(Console.ReadLine());
             UserRectangle.height = Convert.ToInt32(Console.ReadLine());
             int CalcArea = UserRectangle.CalcArea();
+            
             Console.WriteLine($"area of the rectangle is {CalcArea}");
+            
             double CalcAspectRatio = UserRectangle.CalcAspectRatio();
             if ( CalcAspectRatio > 1 )
             {
@@ -87,9 +91,56 @@ namespace ClassPlayground
             {
                 Console.WriteLine($"Its a square with the aspect ratio of {CalcAspectRatio}");
             }
-            int ContainsPoint = UserRectangle.ContainsPoint();
+            Console.Write("\n");
 
-            List<int> grades = new List<int>();
+
+            Console.WriteLine("Write the position of the point you want to find if its inside or outside of the rectangle (first X then Y)");
+            
+            double ContainsPoint = UserRectangle.ContainsPoint();
+            if (ContainsPoint > 0 )
+            {
+                Console.WriteLine($"Its outside the rectangle");
+            }
+            else
+            {
+                Console.WriteLine($"its inside the triangle");
+            }
+
+            BankAccount UserBankAcc = new BankAccount();
+            
+            Console.WriteLine("choose of of these 3 options: Deposite, Withdraw, Transfer");
+
+            string Deposite, Choice, Withdraw;// Transfer;
+            Choice = (Console.ReadLine());
+            
+
+            if (Choice == Deposite)
+            {
+                double AfterDeposite;
+                if (Deposite)
+                {
+                    Console.WriteLine($"Your Account balance is {BankAccount.UserBalance} how much do you want to deposite?");
+                    Deposite = Console.ReadLine();
+
+                    AfterDeposite = Deposite + BankAccount.UserBalance;
+                    Console.WriteLine($"Your new balance is {AfterDeposite}")
+                }
+                else
+                {
+                    Console.WriteLine("invalid command");
+                }
+            }
+            if else (Choice == Withdraw) 
+            { 
+                double AfterWithdraw
+                    if (Withdraw)
+                {
+                    Console.WriteLine($"Your Account balance is {BankAccount.UserBalance} how much do you want to withdraw?")
+
+                }
+            }
+
+            /*List<int> grades = new List<int>();
             grades.Add(10);
             grades.Add(5);
             foreach (int number in grades) 
@@ -101,7 +152,7 @@ namespace ClassPlayground
             subjects["ČJ"] = new List<int>();
             subjects["ČJ"].Add(2);
             subjects["AJ"] = new List<int> { 1, 2, 2 };
-
+            */
             Console.ReadKey();
         }
     }
