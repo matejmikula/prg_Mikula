@@ -60,24 +60,32 @@ namespace Paint_MIK
             Color currentColor = pen.Color; 
             Color newColor = Color.FromArgb(alpha, currentColor.R, currentColor.G, currentColor.B); 
             pen.Color = newColor; 
-            spray = new SolidBrush(pen.Color); 
+            spray = new SolidBrush(pen.Color);
+            brush = new SolidBrush(pen.Color);
         }
-        private void helpButton_Click(object sender, EventArgs e)
+        private void helpButton_Click(object sender, EventArgs e) 
         {
+            // zpráva pro zmatené uživatele, kteří nevědí co mají dělat
             string message = "INTRODUCTION " + Environment.NewLine + Environment.NewLine +
-                             "COLOR BUTTON: Color window will appear, changes colors of all tools and objects you´ll draw." + Environment.NewLine + Environment.NewLine +
+                             "COLOR BUTTON: Color window will appear, changes colors of all tools and objects you´ll draw." + Environment.NewLine +
+                             "HELP?: ..." + Environment.NewLine + Environment.NewLine +
+
+                             "PEN: Casual pen (can change width, opacity and color)" + Environment.NewLine +
+                             "SPRAY: Drawing tool that looks like a spray (same changebility as is with pen)" + Environment.NewLine + Environment.NewLine +
+
                              "ERASE ALL: Everything on the panel will be deleted after clicking." + Environment.NewLine +
                              "ERASER: For using the currently picked tool as an eraser" + Environment.NewLine + Environment.NewLine +
-                             "PEN: Casual pen (can change width, opacity and color)" + Environment.NewLine + 
-                             "SPRAY: Drawing tool that looks as a spray (same changebility as is with pen)" + Environment.NewLine + Environment.NewLine +
-                             "CIRCLE: Draws an unfilled circle (-||-)" + Environment.NewLine +
-                             "CIRCLE FILLED: Draws a filled circle (-||-)" + Environment.NewLine + Environment.NewLine +
-                             "RECTANGLE: Draws an unfilled rectangle (-||-)" + Environment.NewLine +
-                             "RECTANGLE FILLED: Draws a filled rectangle (-||-)" + Environment.NewLine + Environment.NewLine +
-                             "LINE: Draws perfectly straight line (-||-)" + Environment.NewLine + Environment.NewLine +
+                             
+                             "CIRCLE: Draws an unfilled circle" + Environment.NewLine +
+                             "CIRCLE FILLED: Draws a filled circle" + Environment.NewLine + Environment.NewLine +
+
+                             "RECTANGLE: Draws an unfilled rectangle" + Environment.NewLine +
+                             "RECTANGLE FILLED: Draws a filled rectangle" + Environment.NewLine + Environment.NewLine +
+
+                             "LINE: Draws perfectly straight line" + Environment.NewLine + Environment.NewLine +
+
                              "LEFT SCROLL BAR: Changes the opacity of the objects you draw" + Environment.NewLine +
-                             "RIGHT SCROLL BAR: Changes the width (Thickness) of the objects you draw" + Environment.NewLine + Environment.NewLine +
-                             "HELP?: ...";
+                             "RIGHT SCROLL BAR: Changes the width (Thickness) of the objects you draw";
 
             MessageBox.Show(message, "HELP?");
         }

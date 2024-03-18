@@ -50,7 +50,7 @@
             // 
             // colorButton
             // 
-            this.colorButton.Location = new System.Drawing.Point(13, 14);
+            this.colorButton.Location = new System.Drawing.Point(143, 12);
             this.colorButton.Margin = new System.Windows.Forms.Padding(2);
             this.colorButton.Name = "colorButton";
             this.colorButton.Size = new System.Drawing.Size(82, 37);
@@ -75,7 +75,7 @@
             // 
             // eraseButton
             // 
-            this.eraseButton.Location = new System.Drawing.Point(99, 14);
+            this.eraseButton.Location = new System.Drawing.Point(867, 13);
             this.eraseButton.Margin = new System.Windows.Forms.Padding(2);
             this.eraseButton.Name = "eraseButton";
             this.eraseButton.Size = new System.Drawing.Size(82, 36);
@@ -87,7 +87,7 @@
             // sizeBar
             // 
             this.sizeBar.LargeChange = 1;
-            this.sizeBar.Location = new System.Drawing.Point(464, 5);
+            this.sizeBar.Location = new System.Drawing.Point(953, 5);
             this.sizeBar.Margin = new System.Windows.Forms.Padding(2);
             this.sizeBar.Name = "sizeBar";
             this.sizeBar.Size = new System.Drawing.Size(114, 69);
@@ -97,7 +97,7 @@
             // 
             // sizeBox
             // 
-            this.sizeBox.Location = new System.Drawing.Point(474, 44);
+            this.sizeBox.Location = new System.Drawing.Point(990, 69);
             this.sizeBox.Margin = new System.Windows.Forms.Padding(2);
             this.sizeBox.Name = "sizeBox";
             this.sizeBox.Size = new System.Drawing.Size(77, 20);
@@ -105,7 +105,7 @@
             // 
             // eraserButton
             // 
-            this.eraserButton.Location = new System.Drawing.Point(185, 14);
+            this.eraserButton.Location = new System.Drawing.Point(867, 64);
             this.eraserButton.Margin = new System.Windows.Forms.Padding(2);
             this.eraserButton.Name = "eraserButton";
             this.eraserButton.Size = new System.Drawing.Size(82, 36);
@@ -117,7 +117,7 @@
             // penButton
             // 
             this.penButton.AutoSize = true;
-            this.penButton.Location = new System.Drawing.Point(280, 7);
+            this.penButton.Location = new System.Drawing.Point(288, 38);
             this.penButton.Margin = new System.Windows.Forms.Padding(2);
             this.penButton.Name = "penButton";
             this.penButton.Size = new System.Drawing.Size(51, 20);
@@ -130,7 +130,7 @@
             // sprayButton
             // 
             this.sprayButton.AutoSize = true;
-            this.sprayButton.Location = new System.Drawing.Point(280, 27);
+            this.sprayButton.Location = new System.Drawing.Point(288, 69);
             this.sprayButton.Margin = new System.Windows.Forms.Padding(2);
             this.sprayButton.Name = "sprayButton";
             this.sprayButton.Size = new System.Drawing.Size(59, 20);
@@ -142,7 +142,7 @@
             // 
             // opacityBar
             // 
-            this.opacityBar.Location = new System.Drawing.Point(344, 5);
+            this.opacityBar.Location = new System.Drawing.Point(12, 5);
             this.opacityBar.Name = "opacityBar";
             this.opacityBar.Size = new System.Drawing.Size(125, 69);
             this.opacityBar.TabIndex = 8;
@@ -151,7 +151,7 @@
             // 
             // opacityBox
             // 
-            this.opacityBox.Location = new System.Drawing.Point(353, 44);
+            this.opacityBox.Location = new System.Drawing.Point(12, 69);
             this.opacityBox.Margin = new System.Windows.Forms.Padding(2);
             this.opacityBox.Name = "opacityBox";
             this.opacityBox.Size = new System.Drawing.Size(77, 20);
@@ -160,7 +160,7 @@
             // ellipseButton
             // 
             this.ellipseButton.AutoSize = true;
-            this.ellipseButton.Location = new System.Drawing.Point(13, 56);
+            this.ellipseButton.Location = new System.Drawing.Point(501, 90);
             this.ellipseButton.Name = "ellipseButton";
             this.ellipseButton.Size = new System.Drawing.Size(58, 20);
             this.ellipseButton.TabIndex = 10;
@@ -172,7 +172,7 @@
             // rectButton
             // 
             this.rectButton.AutoSize = true;
-            this.rectButton.Location = new System.Drawing.Point(99, 55);
+            this.rectButton.Location = new System.Drawing.Point(501, 12);
             this.rectButton.Name = "rectButton";
             this.rectButton.Size = new System.Drawing.Size(81, 20);
             this.rectButton.TabIndex = 11;
@@ -184,7 +184,7 @@
             // ellipseFillButton
             // 
             this.ellipseFillButton.AutoSize = true;
-            this.ellipseFillButton.Location = new System.Drawing.Point(13, 82);
+            this.ellipseFillButton.Location = new System.Drawing.Point(501, 64);
             this.ellipseFillButton.Name = "ellipseFillButton";
             this.ellipseFillButton.Size = new System.Drawing.Size(85, 20);
             this.ellipseFillButton.TabIndex = 12;
@@ -196,7 +196,7 @@
             // rectFillButton
             // 
             this.rectFillButton.AutoSize = true;
-            this.rectFillButton.Location = new System.Drawing.Point(99, 81);
+            this.rectFillButton.Location = new System.Drawing.Point(501, 38);
             this.rectFillButton.Name = "rectFillButton";
             this.rectFillButton.Size = new System.Drawing.Size(108, 20);
             this.rectFillButton.TabIndex = 13;
@@ -207,7 +207,7 @@
             // lineButton
             // 
             this.lineButton.AutoSize = true;
-            this.lineButton.Location = new System.Drawing.Point(186, 56);
+            this.lineButton.Location = new System.Drawing.Point(783, 38);
             this.lineButton.Name = "lineButton";
             this.lineButton.Size = new System.Drawing.Size(52, 20);
             this.lineButton.TabIndex = 14;
@@ -218,7 +218,7 @@
             // 
             // helpButton
             // 
-            this.helpButton.Location = new System.Drawing.Point(609, 10);
+            this.helpButton.Location = new System.Drawing.Point(143, 69);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(82, 37);
             this.helpButton.TabIndex = 15;
@@ -231,18 +231,18 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 644);
-            this.Controls.Add(this.helpButton);
             this.Controls.Add(this.lineButton);
-            this.Controls.Add(this.rectFillButton);
-            this.Controls.Add(this.ellipseFillButton);
-            this.Controls.Add(this.rectButton);
-            this.Controls.Add(this.ellipseButton);
-            this.Controls.Add(this.opacityBox);
-            this.Controls.Add(this.opacityBar);
             this.Controls.Add(this.sprayButton);
+            this.Controls.Add(this.ellipseButton);
+            this.Controls.Add(this.ellipseFillButton);
+            this.Controls.Add(this.rectFillButton);
             this.Controls.Add(this.penButton);
+            this.Controls.Add(this.helpButton);
+            this.Controls.Add(this.rectButton);
             this.Controls.Add(this.eraserButton);
             this.Controls.Add(this.sizeBox);
+            this.Controls.Add(this.opacityBar);
+            this.Controls.Add(this.opacityBox);
             this.Controls.Add(this.sizeBar);
             this.Controls.Add(this.eraseButton);
             this.Controls.Add(this.panel1);
