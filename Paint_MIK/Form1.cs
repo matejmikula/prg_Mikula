@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,6 +24,7 @@ namespace Paint_MIK
         Pen pen; 
         Brush spray, brush;
         public Random rnd = new Random();
+        PictureBox pictureBox = new PictureBox();
         public Form1() 
         {
             InitializeComponent();
@@ -38,6 +40,8 @@ namespace Paint_MIK
             // maximální velikost scroll barů
             sizeBar.Maximum = 20; 
             opacityBar.Maximum = 255; 
+
+
         }
 
         
@@ -74,7 +78,7 @@ namespace Paint_MIK
                              "SPRAY: Drawing tool that looks like a spray (same changebility as is with pen)" + Environment.NewLine + Environment.NewLine +
 
                              "ERASE ALL: Everything on the panel will be deleted after clicking." + Environment.NewLine +
-                             "ERASER: For using the currently picked tool as an eraser" + Environment.NewLine + Environment.NewLine +
+                             "ERASER: For using the currently picked tool as an eraser, After using the eraser new color is needed to be picked else the tools wont draw anything" + Environment.NewLine + Environment.NewLine +
                              
                              "CIRCLE: Draws an unfilled circle" + Environment.NewLine +
                              "CIRCLE FILLED: Draws a filled circle" + Environment.NewLine + Environment.NewLine +
@@ -85,9 +89,31 @@ namespace Paint_MIK
                              "LINE: Draws perfectly straight line" + Environment.NewLine + Environment.NewLine +
 
                              "LEFT SCROLL BAR: Changes the opacity of the objects you draw" + Environment.NewLine +
-                             "RIGHT SCROLL BAR: Changes the width (Thickness) of the objects you draw";
+                             "RIGHT SCROLL BAR: Changes the width (Thickness) of the objects you draw" + Environment.NewLine + Environment.NewLine +
+                             "IMAGE SELECTION: Choose an image you want to insert" + Environment.NewLine +
+                             "IMAGE INSERTION: Draws/Inserts the choosen image.";
 
             MessageBox.Show(message, "HELP?");
+        }
+        private void imageButton_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files (*.bmp;*.jpg;*.jpeg;*.gif;*.png)|*.BMP;*.JPG;*.JPEG;*.GIF;*.PNG";
+            openFileDialog.Title = "Select Image File";
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // nahraje vybraný obrázek
+                try
+                {
+                    // vybrání obrázku z průzkumníku souborů
+                    pictureBox.Image = Image.FromFile(openFileDialog.FileName);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error loading image: " + ex.Message, "Error");
+                }
+            }
         }
 
 
@@ -106,7 +132,17 @@ namespace Paint_MIK
 
         private void eraseButton_Click(object sender, EventArgs e)
         {
-            g.Clear(panel1.BackColor); // smaže celé plátno
+            // smaže celé plátno, včetně importovaných obrázků
+            g.Clear(panel1.BackColor);
+            foreach (Control control in panel1.Controls)
+            {
+                if (control is PictureBox pictureBox)
+                {
+                    panel1.Controls.Remove(pictureBox);
+                    pictureBox.Dispose();
+                    break;
+                }
+            }
         }
 
         // Event handler for eraserButton click event
@@ -159,6 +195,9 @@ namespace Paint_MIK
 
         private void panel1_MouseUp(object sender, MouseEventArgs e)
         {
+            int width, height;
+            width = Math.Abs(e.X - x);
+            height = Math.Abs(e.Y - y);
             // podle vybrané TOOL se vytvoří shape jí přiřazené až po puštění myše (během kreslení není daný shape vidět)
             if (ellipseButton.Checked && moving && x != -1 && y != -1)
             {
@@ -179,6 +218,17 @@ namespace Paint_MIK
             else if (lineButton.Checked && moving && x != -1 && y != -1)
             {
                 g.DrawLine(pen, x, y, e.X, e.Y); // úsečka
+            }
+            else if (imgButton.Checked)
+            {
+                //zadává velikost, koordinace, apod. pro vložený obrázek
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage; // Then change to AutoSize
+                pictureBox.Size = new Size(width, height);
+                pictureBox.Location = new Point(x, y);
+                pictureBox.BackColor = Color.Transparent;
+
+                // Add the PictureBox to your form
+                panel1.Controls.Add(pictureBox);
             }
             // reset koordinací myše po puštění + změna kurzoru po puštění 
             moving = false; 
@@ -214,6 +264,11 @@ namespace Paint_MIK
         }
 
         private void ellipseFillButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void imgButton_CheckedChanged(object sender, EventArgs e)
         {
 
         }

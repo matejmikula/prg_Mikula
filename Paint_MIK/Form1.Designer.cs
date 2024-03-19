@@ -44,6 +44,8 @@
             this.rectFillButton = new System.Windows.Forms.RadioButton();
             this.lineButton = new System.Windows.Forms.RadioButton();
             this.helpButton = new System.Windows.Forms.Button();
+            this.imageButton = new System.Windows.Forms.Button();
+            this.imgButton = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.sizeBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opacityBar)).BeginInit();
             this.SuspendLayout();
@@ -226,11 +228,36 @@
             this.helpButton.UseVisualStyleBackColor = true;
             this.helpButton.Click += new System.EventHandler(this.helpButton_Click);
             // 
+            // imageButton
+            // 
+            this.imageButton.Location = new System.Drawing.Point(660, 12);
+            this.imageButton.Name = "imageButton";
+            this.imageButton.Size = new System.Drawing.Size(82, 37);
+            this.imageButton.TabIndex = 16;
+            this.imageButton.Text = "Image Selection";
+            this.imageButton.UseVisualStyleBackColor = true;
+            this.imageButton.Click += new System.EventHandler(this.imageButton_Click);
+            // 
+            // imgButton
+            // 
+            this.imgButton.AutoSize = true;
+            this.imgButton.Location = new System.Drawing.Point(660, 54);
+            this.imgButton.Margin = new System.Windows.Forms.Padding(2);
+            this.imgButton.Name = "imgButton";
+            this.imgButton.Size = new System.Drawing.Size(103, 20);
+            this.imgButton.TabIndex = 17;
+            this.imgButton.TabStop = true;
+            this.imgButton.Text = "Image insertion";
+            this.imgButton.UseVisualStyleBackColor = true;
+            this.imgButton.CheckedChanged += new System.EventHandler(this.imgButton_CheckedChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1078, 644);
+            this.Controls.Add(this.imgButton);
+            this.Controls.Add(this.imageButton);
             this.Controls.Add(this.lineButton);
             this.Controls.Add(this.sprayButton);
             this.Controls.Add(this.ellipseButton);
@@ -276,6 +303,8 @@
         private System.Windows.Forms.RadioButton rectFillButton;
         private System.Windows.Forms.RadioButton lineButton;
         private System.Windows.Forms.Button helpButton;
+        private System.Windows.Forms.Button imageButton;
+        private System.Windows.Forms.RadioButton imgButton;
     }
 }
 
