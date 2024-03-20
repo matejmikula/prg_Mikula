@@ -46,16 +46,16 @@
             this.helpButton = new System.Windows.Forms.Button();
             this.imageButton = new System.Windows.Forms.Button();
             this.imgButton = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.sizeBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opacityBar)).BeginInit();
             this.SuspendLayout();
             // 
             // colorButton
             // 
-            this.colorButton.Location = new System.Drawing.Point(143, 12);
-            this.colorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.colorButton.Location = new System.Drawing.Point(214, 18);
             this.colorButton.Name = "colorButton";
-            this.colorButton.Size = new System.Drawing.Size(82, 37);
+            this.colorButton.Size = new System.Drawing.Size(123, 57);
             this.colorButton.TabIndex = 0;
             this.colorButton.Text = "Color";
             this.colorButton.UseVisualStyleBackColor = true;
@@ -65,10 +65,9 @@
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 133);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(0, 277);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1078, 511);
+            this.panel1.Size = new System.Drawing.Size(1628, 467);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
@@ -77,10 +76,9 @@
             // 
             // eraseButton
             // 
-            this.eraseButton.Location = new System.Drawing.Point(867, 13);
-            this.eraseButton.Margin = new System.Windows.Forms.Padding(2);
+            this.eraseButton.Location = new System.Drawing.Point(1157, 18);
             this.eraseButton.Name = "eraseButton";
-            this.eraseButton.Size = new System.Drawing.Size(82, 36);
+            this.eraseButton.Size = new System.Drawing.Size(123, 55);
             this.eraseButton.TabIndex = 2;
             this.eraseButton.Text = "Erase all";
             this.eraseButton.UseVisualStyleBackColor = true;
@@ -89,28 +87,25 @@
             // sizeBar
             // 
             this.sizeBar.LargeChange = 1;
-            this.sizeBar.Location = new System.Drawing.Point(953, 5);
-            this.sizeBar.Margin = new System.Windows.Forms.Padding(2);
+            this.sizeBar.Location = new System.Drawing.Point(1308, 8);
             this.sizeBar.Name = "sizeBar";
-            this.sizeBar.Size = new System.Drawing.Size(114, 69);
+            this.sizeBar.Size = new System.Drawing.Size(171, 69);
             this.sizeBar.TabIndex = 3;
             this.sizeBar.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.sizeBar.Scroll += new System.EventHandler(this.sizeBar_Scroll);
             // 
             // sizeBox
             // 
-            this.sizeBox.Location = new System.Drawing.Point(990, 69);
-            this.sizeBox.Margin = new System.Windows.Forms.Padding(2);
+            this.sizeBox.Location = new System.Drawing.Point(1308, 85);
             this.sizeBox.Name = "sizeBox";
-            this.sizeBox.Size = new System.Drawing.Size(77, 20);
+            this.sizeBox.Size = new System.Drawing.Size(114, 26);
             this.sizeBox.TabIndex = 4;
             // 
             // eraserButton
             // 
-            this.eraserButton.Location = new System.Drawing.Point(867, 64);
-            this.eraserButton.Margin = new System.Windows.Forms.Padding(2);
+            this.eraserButton.Location = new System.Drawing.Point(1157, 106);
             this.eraserButton.Name = "eraserButton";
-            this.eraserButton.Size = new System.Drawing.Size(82, 36);
+            this.eraserButton.Size = new System.Drawing.Size(123, 55);
             this.eraserButton.TabIndex = 5;
             this.eraserButton.Text = "Eraser";
             this.eraserButton.UseVisualStyleBackColor = true;
@@ -119,10 +114,9 @@
             // penButton
             // 
             this.penButton.AutoSize = true;
-            this.penButton.Location = new System.Drawing.Point(288, 38);
-            this.penButton.Margin = new System.Windows.Forms.Padding(2);
+            this.penButton.Location = new System.Drawing.Point(432, 58);
             this.penButton.Name = "penButton";
-            this.penButton.Size = new System.Drawing.Size(51, 20);
+            this.penButton.Size = new System.Drawing.Size(62, 24);
             this.penButton.TabIndex = 6;
             this.penButton.TabStop = true;
             this.penButton.Text = "Pen";
@@ -132,10 +126,9 @@
             // sprayButton
             // 
             this.sprayButton.AutoSize = true;
-            this.sprayButton.Location = new System.Drawing.Point(288, 69);
-            this.sprayButton.Margin = new System.Windows.Forms.Padding(2);
+            this.sprayButton.Location = new System.Drawing.Point(432, 106);
             this.sprayButton.Name = "sprayButton";
-            this.sprayButton.Size = new System.Drawing.Size(59, 20);
+            this.sprayButton.Size = new System.Drawing.Size(75, 24);
             this.sprayButton.TabIndex = 7;
             this.sprayButton.TabStop = true;
             this.sprayButton.Text = "Spray";
@@ -144,27 +137,28 @@
             // 
             // opacityBar
             // 
-            this.opacityBar.Location = new System.Drawing.Point(12, 5);
+            this.opacityBar.Location = new System.Drawing.Point(18, 8);
+            this.opacityBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.opacityBar.Name = "opacityBar";
-            this.opacityBar.Size = new System.Drawing.Size(125, 69);
+            this.opacityBar.Size = new System.Drawing.Size(188, 69);
             this.opacityBar.TabIndex = 8;
             this.opacityBar.TickStyle = System.Windows.Forms.TickStyle.Both;
             this.opacityBar.Scroll += new System.EventHandler(this.opacityBar_Scroll);
             // 
             // opacityBox
             // 
-            this.opacityBox.Location = new System.Drawing.Point(12, 69);
-            this.opacityBox.Margin = new System.Windows.Forms.Padding(2);
+            this.opacityBox.Location = new System.Drawing.Point(18, 106);
             this.opacityBox.Name = "opacityBox";
-            this.opacityBox.Size = new System.Drawing.Size(77, 20);
+            this.opacityBox.Size = new System.Drawing.Size(114, 26);
             this.opacityBox.TabIndex = 9;
             // 
             // ellipseButton
             // 
             this.ellipseButton.AutoSize = true;
-            this.ellipseButton.Location = new System.Drawing.Point(501, 90);
+            this.ellipseButton.Location = new System.Drawing.Point(613, 140);
+            this.ellipseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ellipseButton.Name = "ellipseButton";
-            this.ellipseButton.Size = new System.Drawing.Size(58, 20);
+            this.ellipseButton.Size = new System.Drawing.Size(73, 24);
             this.ellipseButton.TabIndex = 10;
             this.ellipseButton.TabStop = true;
             this.ellipseButton.Text = "Circle";
@@ -174,9 +168,10 @@
             // rectButton
             // 
             this.rectButton.AutoSize = true;
-            this.rectButton.Location = new System.Drawing.Point(501, 12);
+            this.rectButton.Location = new System.Drawing.Point(613, 18);
+            this.rectButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rectButton.Name = "rectButton";
-            this.rectButton.Size = new System.Drawing.Size(81, 20);
+            this.rectButton.Size = new System.Drawing.Size(107, 24);
             this.rectButton.TabIndex = 11;
             this.rectButton.TabStop = true;
             this.rectButton.Text = "Rectangle";
@@ -186,9 +181,10 @@
             // ellipseFillButton
             // 
             this.ellipseFillButton.AutoSize = true;
-            this.ellipseFillButton.Location = new System.Drawing.Point(501, 64);
+            this.ellipseFillButton.Location = new System.Drawing.Point(613, 106);
+            this.ellipseFillButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ellipseFillButton.Name = "ellipseFillButton";
-            this.ellipseFillButton.Size = new System.Drawing.Size(85, 20);
+            this.ellipseFillButton.Size = new System.Drawing.Size(114, 24);
             this.ellipseFillButton.TabIndex = 12;
             this.ellipseFillButton.TabStop = true;
             this.ellipseFillButton.Text = "Circle Filled";
@@ -198,9 +194,10 @@
             // rectFillButton
             // 
             this.rectFillButton.AutoSize = true;
-            this.rectFillButton.Location = new System.Drawing.Point(501, 38);
+            this.rectFillButton.Location = new System.Drawing.Point(613, 58);
+            this.rectFillButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rectFillButton.Name = "rectFillButton";
-            this.rectFillButton.Size = new System.Drawing.Size(108, 20);
+            this.rectFillButton.Size = new System.Drawing.Size(148, 24);
             this.rectFillButton.TabIndex = 13;
             this.rectFillButton.TabStop = true;
             this.rectFillButton.Text = "Rectangle Filled";
@@ -209,9 +206,10 @@
             // lineButton
             // 
             this.lineButton.AutoSize = true;
-            this.lineButton.Location = new System.Drawing.Point(783, 38);
+            this.lineButton.Location = new System.Drawing.Point(1049, 51);
+            this.lineButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lineButton.Name = "lineButton";
-            this.lineButton.Size = new System.Drawing.Size(52, 20);
+            this.lineButton.Size = new System.Drawing.Size(64, 24);
             this.lineButton.TabIndex = 14;
             this.lineButton.TabStop = true;
             this.lineButton.Text = "Line";
@@ -220,9 +218,10 @@
             // 
             // helpButton
             // 
-            this.helpButton.Location = new System.Drawing.Point(143, 69);
+            this.helpButton.Location = new System.Drawing.Point(214, 106);
+            this.helpButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.helpButton.Name = "helpButton";
-            this.helpButton.Size = new System.Drawing.Size(82, 37);
+            this.helpButton.Size = new System.Drawing.Size(123, 57);
             this.helpButton.TabIndex = 15;
             this.helpButton.Text = "HELP?";
             this.helpButton.UseVisualStyleBackColor = true;
@@ -230,32 +229,42 @@
             // 
             // imageButton
             // 
-            this.imageButton.Location = new System.Drawing.Point(660, 12);
+            this.imageButton.Location = new System.Drawing.Point(876, 20);
+            this.imageButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.imageButton.Name = "imageButton";
-            this.imageButton.Size = new System.Drawing.Size(82, 37);
+            this.imageButton.Size = new System.Drawing.Size(123, 57);
             this.imageButton.TabIndex = 16;
-            this.imageButton.Text = "Image Selection";
             this.imageButton.UseVisualStyleBackColor = true;
             this.imageButton.Click += new System.EventHandler(this.imageButton_Click);
             // 
             // imgButton
             // 
             this.imgButton.AutoSize = true;
-            this.imgButton.Location = new System.Drawing.Point(660, 54);
-            this.imgButton.Margin = new System.Windows.Forms.Padding(2);
+            this.imgButton.Location = new System.Drawing.Point(876, 85);
             this.imgButton.Name = "imgButton";
-            this.imgButton.Size = new System.Drawing.Size(103, 20);
+            this.imgButton.Size = new System.Drawing.Size(143, 24);
             this.imgButton.TabIndex = 17;
             this.imgButton.TabStop = true;
             this.imgButton.Text = "Image insertion";
             this.imgButton.UseVisualStyleBackColor = true;
             this.imgButton.CheckedChanged += new System.EventHandler(this.imgButton_CheckedChanged);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(875, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 20);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Image Selection";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1078, 644);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1628, 744);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.imgButton);
             this.Controls.Add(this.imageButton);
             this.Controls.Add(this.lineButton);
@@ -274,7 +283,6 @@
             this.Controls.Add(this.eraseButton);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.colorButton);
-            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -305,6 +313,7 @@
         private System.Windows.Forms.Button helpButton;
         private System.Windows.Forms.Button imageButton;
         private System.Windows.Forms.RadioButton imgButton;
+        private System.Windows.Forms.Label label1;
     }
 }
 

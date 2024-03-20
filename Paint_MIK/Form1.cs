@@ -24,7 +24,7 @@ namespace Paint_MIK
         Pen pen; 
         Brush spray, brush;
         public Random rnd = new Random();
-        PictureBox pictureBox = new PictureBox();
+        Image currentImage;
         public Form1() 
         {
             InitializeComponent();
@@ -33,7 +33,9 @@ namespace Paint_MIK
             s = 5;
             pen = new Pen(Color.Black, s); 
             brush = new SolidBrush(Color.Black); 
-            spray = new SolidBrush(Color.Black); 
+            spray = new SolidBrush(Color.Black);
+            colorButton.ForeColor = Color.White;
+            colorButton.BackColor = Color.Black;
             pen.StartCap = pen.EndCap = System.Drawing.Drawing2D.LineCap.Round;
             g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias; 
 
@@ -69,7 +71,7 @@ namespace Paint_MIK
         }
         private void helpButton_Click(object sender, EventArgs e) 
         {
-            // zpráva pro zmatené uživatele, kteří nevědí co mají dělat
+            // zpráva pro zmatené uživatele, kteří nevědí co mají dělat (třeba učitelé na Gymvodu ;D
             string message = "INTRODUCTION " + Environment.NewLine + Environment.NewLine +
                              "COLOR BUTTON: Color window will appear, changes colors of all tools and objects you´ll draw." + Environment.NewLine +
                              "HELP?: ..." + Environment.NewLine + Environment.NewLine +
@@ -78,8 +80,10 @@ namespace Paint_MIK
                              "SPRAY: Drawing tool that looks like a spray (same changebility as is with pen)" + Environment.NewLine + Environment.NewLine +
 
                              "ERASE ALL: Everything on the panel will be deleted after clicking." + Environment.NewLine +
-                             "ERASER: For using the currently picked tool as an eraser, After using the eraser new color is needed to be picked else the tools wont draw anything" + Environment.NewLine + Environment.NewLine +
-                             
+                             "ERASER: For using the currently picked tool as an eraser" + Environment.NewLine + 
+                             "After using the eraser new color is needed to be picked else the tools wont draw anything" + Environment.NewLine +
+                             "You can see the currently picked color on the color button" + Environment.NewLine + Environment.NewLine +
+
                              "CIRCLE: Draws an unfilled circle" + Environment.NewLine +
                              "CIRCLE FILLED: Draws a filled circle" + Environment.NewLine + Environment.NewLine +
 
@@ -107,13 +111,16 @@ namespace Paint_MIK
                 try
                 {
                     // vybrání obrázku z průzkumníku souborů
-                    pictureBox.Image = Image.FromFile(openFileDialog.FileName);
+                    currentImage = Image.FromFile(openFileDialog.FileName);
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error loading image: " + ex.Message, "Error");
                 }
             }
+            imageButton.BackgroundImageLayout = ImageLayout.Stretch;
+            imageButton.BackgroundImage = currentImage;
+
         }
 
 
@@ -125,6 +132,15 @@ namespace Paint_MIK
             {
                 //update barvy u všech obrazců/typů stětců
                 pen.Color = colorDialog.Color; 
+                colorButton.BackColor = colorDialog.Color;
+                if (colorButton.BackColor == Color.Black)
+                {
+                    colorButton.ForeColor = Color.White;
+                }
+                else
+                {
+                    colorButton.ForeColor = Color.Black;
+                }
                 spray = new SolidBrush(pen.Color); 
                 brush = new SolidBrush(pen.Color); 
             }
@@ -132,17 +148,8 @@ namespace Paint_MIK
 
         private void eraseButton_Click(object sender, EventArgs e)
         {
-            // smaže celé plátno, včetně importovaných obrázků
+            // smaže celé plátno
             g.Clear(panel1.BackColor);
-            foreach (Control control in panel1.Controls)
-            {
-                if (control is PictureBox pictureBox)
-                {
-                    panel1.Controls.Remove(pictureBox);
-                    pictureBox.Dispose();
-                    break;
-                }
-            }
         }
 
         // Event handler for eraserButton click event
@@ -152,6 +159,8 @@ namespace Paint_MIK
             pen.Color = panel1.BackColor; 
             spray = new SolidBrush(pen.Color); 
             brush = new SolidBrush(pen.Color);
+            colorButton.BackColor = pen.Color;
+            colorButton.ForeColor = Color.Black;
         }
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
@@ -221,14 +230,7 @@ namespace Paint_MIK
             }
             else if (imgButton.Checked)
             {
-                //zadává velikost, koordinace, apod. pro vložený obrázek
-                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage; // Then change to AutoSize
-                pictureBox.Size = new Size(width, height);
-                pictureBox.Location = new Point(x, y);
-                pictureBox.BackColor = Color.Transparent;
-
-                // Add the PictureBox to your form
-                panel1.Controls.Add(pictureBox);
+                g.DrawImage(currentImage, x, y, width, height); // vybraný obrázek
             }
             // reset koordinací myše po puštění + změna kurzoru po puštění 
             moving = false; 
