@@ -229,10 +229,10 @@
             // 
             // imageButton
             // 
-            this.imageButton.Location = new System.Drawing.Point(876, 20);
+            this.imageButton.Location = new System.Drawing.Point(811, 35);
             this.imageButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.imageButton.Name = "imageButton";
-            this.imageButton.Size = new System.Drawing.Size(123, 57);
+            this.imageButton.Size = new System.Drawing.Size(230, 141);
             this.imageButton.TabIndex = 16;
             this.imageButton.UseVisualStyleBackColor = true;
             this.imageButton.Click += new System.EventHandler(this.imageButton_Click);
@@ -240,7 +240,7 @@
             // imgButton
             // 
             this.imgButton.AutoSize = true;
-            this.imgButton.Location = new System.Drawing.Point(876, 85);
+            this.imgButton.Location = new System.Drawing.Point(863, 184);
             this.imgButton.Name = "imgButton";
             this.imgButton.Size = new System.Drawing.Size(143, 24);
             this.imgButton.TabIndex = 17;
@@ -252,7 +252,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(875, 8);
+            this.label1.Location = new System.Drawing.Point(859, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 20);
             this.label1.TabIndex = 18;
