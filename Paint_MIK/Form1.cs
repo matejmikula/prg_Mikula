@@ -165,6 +165,7 @@ namespace Paint_MIK
 
         private void panel1_MouseDown(object sender, MouseEventArgs e)
         {
+            GraphicsPath path = new GraphicsPath();
             // původní koordinací myše po stiknutí + změna kurzoru po stisknutí 
             moving = true;
             x = e.X; 
@@ -242,12 +243,12 @@ namespace Paint_MIK
         // Další event handlery, metody, elementy, etc., která jsou potřeba pro funkčnost programu
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
+            
         }
 
         private void penButton_CheckedChanged(object sender, EventArgs e)
@@ -274,7 +275,6 @@ namespace Paint_MIK
         {
 
         }
-
         private void lineButton_CheckedChanged(object sender, EventArgs e)
         {
 
