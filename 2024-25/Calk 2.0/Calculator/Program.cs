@@ -30,7 +30,7 @@ namespace Calculator
                 Console.Write("\n");
 
                 Console.WriteLine("Write the mathematic operation you want to do (options: +, -, *, /, ^, sqr root, !, binary)");
-                string op = Console.ReadLine(); // přečtení operace
+                string op = Console.ReadLine().ToLower(); // přečtení operace
                 Console.Write("\n");
                 if (op == "+" || op == "-" || op == "*" || op == "/" || op == "^") // pokud jsou tyto operace nechá se přečíst i druhé číslo
                 {
@@ -56,7 +56,7 @@ namespace Calculator
                         {
                             if (N2 == 0) // zajištění že se nebude dělit nulou
                             {
-                                Console.WriteLine("Math Error (can´t divide by zero");
+                                Console.WriteLine("Math Error (can´t divide by zero)");
                                 continue;
                             }
                             else
@@ -70,6 +70,7 @@ namespace Calculator
                         }
                         if (op != "binary") // odpověď pokud nebočítal binární převod, protože ten mám ve stringu, zbytek mam jako double
                         {
+
                             Console.WriteLine(Ans);
 
                         }
