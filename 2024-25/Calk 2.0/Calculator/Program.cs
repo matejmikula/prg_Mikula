@@ -68,12 +68,6 @@ namespace Calculator
                         {
                             Ans = Math.Pow(N1, N2);
                         }
-                        if (op != "binary") // odpověď pokud nebočítal binární převod, protože ten mám ve stringu, zbytek mam jako double
-                        {
-
-                            Console.WriteLine(Ans);
-
-                        }
 
                     }
                     else //kontrola, že uživatel vloží číslo a ne něco jiného
@@ -81,6 +75,7 @@ namespace Calculator
                         Console.WriteLine("Wrong Input, check if you´ve got everything right"); // to samý jako předchozí else akorát pro to aby vstup byl vždy číslo 
                         continue;
                     }
+                    Console.WriteLine(Ans);
                     Console.WriteLine("Do you want to do another operation? Press (Y/N):");
                     ConsoleKeyInfo keyInfo2 = Console.ReadKey(); // "reset" programu, aby mohl uživatel vložit nový příklad
                     // automatické přečtení charakteru (vygenerováno od chatgpt :D) 
@@ -122,6 +117,10 @@ namespace Calculator
                         Ans = 000000;
                         continue;
                     }
+                    if (op != "binary")
+                    {
+                        Console.WriteLine(Ans);
+                    }
                     Console.WriteLine("Do you want to do another operation? Press (Y/N):"); // opět "reset" programu, aby mohl uživatel vložit nový příklad
                     ConsoleKeyInfo keyInfo1 = Console.ReadKey();
                     // opět automatické přečtení charakteru (vygenerováno od chatgpt :D) 
@@ -148,7 +147,7 @@ namespace Calculator
             }
             else if (n < 0) // kontrola, že máme nezáporné číslo a můžeme počítat
             {
-                Console.WriteLine("Faktoriál nelze spočítat pro záporné číslo.");
+                Console.WriteLine("Factorial can´t be done for negative numbers.");
                 return 0;
             }
             double Ans = 1;
