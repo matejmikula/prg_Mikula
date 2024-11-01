@@ -1,0 +1,7 @@
+H:\4D\Mikula\programovani\prg_Mikula\2024-25\Lists and Dictionaries\Lists and Dictionaries\bin\Debug\Lists and Dictionaries.exe.config
+H:\4D\Mikula\programovani\prg_Mikula\2024-25\Lists and Dictionaries\Lists and Dictionaries\bin\Debug\Lists and Dictionaries.exe
+H:\4D\Mikula\programovani\prg_Mikula\2024-25\Lists and Dictionaries\Lists and Dictionaries\bin\Debug\Lists and Dictionaries.pdb
+H:\4D\Mikula\programovani\prg_Mikula\2024-25\Lists and Dictionaries\Lists and Dictionaries\obj\Debug\Lists and Dictionaries.csproj.AssemblyReference.cache
+H:\4D\Mikula\programovani\prg_Mikula\2024-25\Lists and Dictionaries\Lists and Dictionaries\obj\Debug\Lists and Dictionaries.csproj.CoreCompileInputs.cache
+H:\4D\Mikula\programovani\prg_Mikula\2024-25\Lists and Dictionaries\Lists and Dictionaries\obj\Debug\Lists and Dictionaries.exe
+H:\4D\Mikula\programovani\prg_Mikula\2024-25\Lists and Dictionaries\Lists and Dictionaries\obj\Debug\Lists and Dictionaries.pdb
