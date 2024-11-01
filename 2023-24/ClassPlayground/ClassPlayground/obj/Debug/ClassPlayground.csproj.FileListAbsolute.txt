@@ -1,0 +1,7 @@
+H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\bin\Debug\ClassPlayground.exe.config
+H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\bin\Debug\ClassPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\bin\Debug\ClassPlayground.pdb
+H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.csproj.AssemblyReference.cache
+H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.csproj.CoreCompileInputs.cache
+H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.pdb

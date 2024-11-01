@@ -1,0 +1,7 @@
+H:\3D\Mikula\programovani\prg_Mikula\classes\classes\bin\Debug\classes.exe.config
+H:\3D\Mikula\programovani\prg_Mikula\classes\classes\bin\Debug\classes.exe
+H:\3D\Mikula\programovani\prg_Mikula\classes\classes\bin\Debug\classes.pdb
+H:\3D\Mikula\programovani\prg_Mikula\classes\classes\obj\Debug\classes.csproj.AssemblyReference.cache
+H:\3D\Mikula\programovani\prg_Mikula\classes\classes\obj\Debug\classes.csproj.CoreCompileInputs.cache
+H:\3D\Mikula\programovani\prg_Mikula\classes\classes\obj\Debug\classes.exe
+H:\3D\Mikula\programovani\prg_Mikula\classes\classes\obj\Debug\classes.pdb

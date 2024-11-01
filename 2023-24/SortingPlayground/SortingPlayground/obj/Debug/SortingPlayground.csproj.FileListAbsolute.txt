@@ -1,0 +1,7 @@
+H:\3D\Mikula\programovani\prg_Mikula\SortingPlayground\SortingPlayground\bin\Debug\SortingPlayground.exe.config
+H:\3D\Mikula\programovani\prg_Mikula\SortingPlayground\SortingPlayground\bin\Debug\SortingPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\SortingPlayground\SortingPlayground\bin\Debug\SortingPlayground.pdb
+H:\3D\Mikula\programovani\prg_Mikula\SortingPlayground\SortingPlayground\obj\Debug\SortingPlayground.csproj.AssemblyReference.cache
+H:\3D\Mikula\programovani\prg_Mikula\SortingPlayground\SortingPlayground\obj\Debug\SortingPlayground.csproj.CoreCompileInputs.cache
+H:\3D\Mikula\programovani\prg_Mikula\SortingPlayground\SortingPlayground\obj\Debug\SortingPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\SortingPlayground\SortingPlayground\obj\Debug\SortingPlayground.pdb

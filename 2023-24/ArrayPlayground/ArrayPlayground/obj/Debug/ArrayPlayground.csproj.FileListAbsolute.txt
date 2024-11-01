@@ -1,0 +1,7 @@
+H:\3D\Mikula\programovani\prg_Mikula\ArrayPlayground\ArrayPlayground\obj\Debug\ArrayPlayground.csproj.AssemblyReference.cache
+H:\3D\Mikula\programovani\prg_Mikula\ArrayPlayground\ArrayPlayground\obj\Debug\ArrayPlayground.csproj.CoreCompileInputs.cache
+H:\3D\Mikula\programovani\prg_Mikula\ArrayPlayground\ArrayPlayground\bin\Debug\ArrayPlayground.exe.config
+H:\3D\Mikula\programovani\prg_Mikula\ArrayPlayground\ArrayPlayground\bin\Debug\ArrayPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\ArrayPlayground\ArrayPlayground\bin\Debug\ArrayPlayground.pdb
+H:\3D\Mikula\programovani\prg_Mikula\ArrayPlayground\ArrayPlayground\obj\Debug\ArrayPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\ArrayPlayground\ArrayPlayground\obj\Debug\ArrayPlayground.pdb

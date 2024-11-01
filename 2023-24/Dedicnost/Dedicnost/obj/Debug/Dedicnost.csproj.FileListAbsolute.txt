@@ -1,0 +1,7 @@
+H:\3D\Mikula\programovani\prg_Mikula\Dedicnost\Dedicnost\obj\Debug\Dedicnost.csproj.AssemblyReference.cache
+H:\3D\Mikula\programovani\prg_Mikula\Dedicnost\Dedicnost\obj\Debug\Dedicnost.csproj.CoreCompileInputs.cache
+H:\3D\Mikula\programovani\prg_Mikula\Dedicnost\Dedicnost\bin\Debug\Dedicnost.exe.config
+H:\3D\Mikula\programovani\prg_Mikula\Dedicnost\Dedicnost\bin\Debug\Dedicnost.exe
+H:\3D\Mikula\programovani\prg_Mikula\Dedicnost\Dedicnost\bin\Debug\Dedicnost.pdb
+H:\3D\Mikula\programovani\prg_Mikula\Dedicnost\Dedicnost\obj\Debug\Dedicnost.exe
+H:\3D\Mikula\programovani\prg_Mikula\Dedicnost\Dedicnost\obj\Debug\Dedicnost.pdb

@@ -1,0 +1,7 @@
+H:\3D\Mikula\programovani\prg_Mikula\wofkolmao\bin\Debug\wofkolmao.exe.config
+H:\3D\Mikula\programovani\prg_Mikula\wofkolmao\bin\Debug\wofkolmao.exe
+H:\3D\Mikula\programovani\prg_Mikula\wofkolmao\bin\Debug\wofkolmao.pdb
+H:\3D\Mikula\programovani\prg_Mikula\wofkolmao\obj\Debug\wofkolmao.csproj.AssemblyReference.cache
+H:\3D\Mikula\programovani\prg_Mikula\wofkolmao\obj\Debug\wofkolmao.csproj.CoreCompileInputs.cache
+H:\3D\Mikula\programovani\prg_Mikula\wofkolmao\obj\Debug\wofkolmao.exe
+H:\3D\Mikula\programovani\prg_Mikula\wofkolmao\obj\Debug\wofkolmao.pdb

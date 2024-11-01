@@ -1,0 +1,7 @@
+H:\3D\Mikula\programovani\prg_Mikula\SearchPlayground\SearchPlayground\bin\Debug\SearchPlayground.exe.config
+H:\3D\Mikula\programovani\prg_Mikula\SearchPlayground\SearchPlayground\bin\Debug\SearchPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\SearchPlayground\SearchPlayground\bin\Debug\SearchPlayground.pdb
+H:\3D\Mikula\programovani\prg_Mikula\SearchPlayground\SearchPlayground\obj\Debug\SearchPlayground.csproj.AssemblyReference.cache
+H:\3D\Mikula\programovani\prg_Mikula\SearchPlayground\SearchPlayground\obj\Debug\SearchPlayground.csproj.CoreCompileInputs.cache
+H:\3D\Mikula\programovani\prg_Mikula\SearchPlayground\SearchPlayground\obj\Debug\SearchPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\SearchPlayground\SearchPlayground\obj\Debug\SearchPlayground.pdb

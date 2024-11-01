@@ -1,0 +1,7 @@
+H:\3D\Mikula\programovani\prg_Mikula\RecursionPlayground\RecursionPlayground\bin\Debug\RecursionPlayground.exe.config
+H:\3D\Mikula\programovani\prg_Mikula\RecursionPlayground\RecursionPlayground\bin\Debug\RecursionPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\RecursionPlayground\RecursionPlayground\bin\Debug\RecursionPlayground.pdb
+H:\3D\Mikula\programovani\prg_Mikula\RecursionPlayground\RecursionPlayground\obj\Debug\RecursionPlayground.csproj.AssemblyReference.cache
+H:\3D\Mikula\programovani\prg_Mikula\RecursionPlayground\RecursionPlayground\obj\Debug\RecursionPlayground.csproj.CoreCompileInputs.cache
+H:\3D\Mikula\programovani\prg_Mikula\RecursionPlayground\RecursionPlayground\obj\Debug\RecursionPlayground.exe
+H:\3D\Mikula\programovani\prg_Mikula\RecursionPlayground\RecursionPlayground\obj\Debug\RecursionPlayground.pdb

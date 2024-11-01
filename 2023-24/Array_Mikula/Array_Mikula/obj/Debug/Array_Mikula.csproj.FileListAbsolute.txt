@@ -1,0 +1,7 @@
+H:\3D\Mikula\programovani\prg_Mikula\Array_Mikula\Array_Mikula\bin\Debug\Array_Mikula.exe.config
+H:\3D\Mikula\programovani\prg_Mikula\Array_Mikula\Array_Mikula\bin\Debug\Array_Mikula.exe
+H:\3D\Mikula\programovani\prg_Mikula\Array_Mikula\Array_Mikula\bin\Debug\Array_Mikula.pdb
+H:\3D\Mikula\programovani\prg_Mikula\Array_Mikula\Array_Mikula\obj\Debug\Array_Mikula.csproj.AssemblyReference.cache
+H:\3D\Mikula\programovani\prg_Mikula\Array_Mikula\Array_Mikula\obj\Debug\Array_Mikula.csproj.CoreCompileInputs.cache
+H:\3D\Mikula\programovani\prg_Mikula\Array_Mikula\Array_Mikula\obj\Debug\Array_Mikula.exe
+H:\3D\Mikula\programovani\prg_Mikula\Array_Mikula\Array_Mikula\obj\Debug\Array_Mikula.pdb
