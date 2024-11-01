@@ -32,11 +32,11 @@ namespace Lists_and_Dictionaries
                     }
                     else if (FavFood.Count > 0)
                     {
+                        Console.WriteLine("which do you want to remove?");
                         foreach (string food in FavFood)
                         {
                             Console.WriteLine($"your choices are: {food}");
                         }
-                        Console.WriteLine("which do you want to remove?");
                         FavFood.Remove(Console.ReadLine());
 
                     }
