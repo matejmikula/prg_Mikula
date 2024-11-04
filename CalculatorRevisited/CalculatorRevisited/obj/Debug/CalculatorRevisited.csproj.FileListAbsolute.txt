@@ -1,0 +1,10 @@
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\obj\Debug\CalculatorRevisited.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\obj\Debug\CalculatorRevisited.CalculatorRevisited.resources
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\obj\Debug\CalculatorRevisited.Properties.Resources.resources
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\obj\Debug\CalculatorRevisited.csproj.GenerateResource.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\obj\Debug\CalculatorRevisited.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\bin\Debug\CalculatorRevisited.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\bin\Debug\CalculatorRevisited.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\bin\Debug\CalculatorRevisited.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\obj\Debug\CalculatorRevisited.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CalculatorRevisited\CalculatorRevisited\obj\Debug\CalculatorRevisited.pdb

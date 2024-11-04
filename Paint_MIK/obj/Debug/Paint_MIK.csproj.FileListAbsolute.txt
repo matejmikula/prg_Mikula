@@ -1,0 +1,10 @@
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\bin\Debug\Paint_MIK.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\bin\Debug\Paint_MIK.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\bin\Debug\Paint_MIK.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\obj\Debug\Paint_MIK.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\obj\Debug\Paint_MIK.Form1.resources
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\obj\Debug\Paint_MIK.Properties.Resources.resources
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\obj\Debug\Paint_MIK.csproj.GenerateResource.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\obj\Debug\Paint_MIK.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\obj\Debug\Paint_MIK.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Paint_MIK\obj\Debug\Paint_MIK.pdb

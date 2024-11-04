@@ -1,0 +1,10 @@
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\bin\Debug\FormsIntroduction.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\bin\Debug\FormsIntroduction.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\bin\Debug\FormsIntroduction.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\obj\Debug\FormsIntroduction.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\obj\Debug\FormsIntroduction.Form1.resources
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\obj\Debug\FormsIntroduction.Properties.Resources.resources
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\obj\Debug\FormsIntroduction.csproj.GenerateResource.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\obj\Debug\FormsIntroduction.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\obj\Debug\FormsIntroduction.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\FormsIntroduction\obj\Debug\FormsIntroduction.pdb

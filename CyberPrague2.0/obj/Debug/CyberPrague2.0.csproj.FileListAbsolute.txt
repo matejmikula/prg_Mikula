@@ -1,0 +1,10 @@
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\bin\Debug\CyberPrague2.0.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\bin\Debug\CyberPrague2.0.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\bin\Debug\CyberPrague2.0.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\obj\Debug\CyberPrague2.0.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\obj\Debug\CyberPrague2._0.Form1.resources
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\obj\Debug\CyberPrague2._0.Properties.Resources.resources
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\obj\Debug\CyberPrague2.0.csproj.GenerateResource.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\obj\Debug\CyberPrague2.0.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\obj\Debug\CyberPrague2.0.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\CyberPrague2.0\obj\Debug\CyberPrague2.0.pdb

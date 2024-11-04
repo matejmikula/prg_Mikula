@@ -1,0 +1,20 @@
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\bin\Debug\Files.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\bin\Debug\Files.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\bin\Debug\Files.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\bin\Debug\Newtonsoft.Json.dll
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\bin\Debug\Newtonsoft.Json.xml
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\obj\Debug\Files.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\obj\Debug\Files.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\obj\Debug\Files.csproj.CopyComplete
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\obj\Debug\Files.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\Septimy\31 - 3.4.2024\Files\Files\obj\Debug\Files.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\bin\Debug\Files.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\bin\Debug\Files.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\bin\Debug\Files.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\bin\Debug\Newtonsoft.Json.dll
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\bin\Debug\Newtonsoft.Json.xml
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\obj\Debug\Files.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\obj\Debug\Files.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\obj\Debug\Files.csproj.CopyComplete
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\obj\Debug\Files.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Files\Files\Files\obj\Debug\Files.pdb

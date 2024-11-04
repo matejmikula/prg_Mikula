@@ -1,0 +1,7 @@
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\GraphPlayground\GraphPlayground\bin\Debug\GraphPlayground.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\GraphPlayground\GraphPlayground\bin\Debug\GraphPlayground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\GraphPlayground\GraphPlayground\bin\Debug\GraphPlayground.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\GraphPlayground\GraphPlayground\obj\Debug\GraphPlayground.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\GraphPlayground\GraphPlayground\obj\Debug\GraphPlayground.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\GraphPlayground\GraphPlayground\obj\Debug\GraphPlayground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\GraphPlayground\GraphPlayground\obj\Debug\GraphPlayground.pdb

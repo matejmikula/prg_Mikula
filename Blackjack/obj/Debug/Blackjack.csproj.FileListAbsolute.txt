@@ -1,0 +1,14 @@
+C:\Users\obiwa\Documents\PROGRAMKO_2324\prg_Mikula\Blackjack\bin\Debug\Blackjack.exe.config
+C:\Users\obiwa\Documents\PROGRAMKO_2324\prg_Mikula\Blackjack\bin\Debug\Blackjack.exe
+C:\Users\obiwa\Documents\PROGRAMKO_2324\prg_Mikula\Blackjack\bin\Debug\Blackjack.pdb
+C:\Users\obiwa\Documents\PROGRAMKO_2324\prg_Mikula\Blackjack\obj\Debug\Blackjack.csproj.AssemblyReference.cache
+C:\Users\obiwa\Documents\PROGRAMKO_2324\prg_Mikula\Blackjack\obj\Debug\Blackjack.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\Documents\PROGRAMKO_2324\prg_Mikula\Blackjack\obj\Debug\Blackjack.exe
+C:\Users\obiwa\Documents\PROGRAMKO_2324\prg_Mikula\Blackjack\obj\Debug\Blackjack.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Blackjack\bin\Debug\Blackjack.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Blackjack\bin\Debug\Blackjack.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Blackjack\bin\Debug\Blackjack.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Blackjack\obj\Debug\Blackjack.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Blackjack\obj\Debug\Blackjack.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Blackjack\obj\Debug\Blackjack.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\Blackjack\obj\Debug\Blackjack.pdb
