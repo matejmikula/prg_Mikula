@@ -1,0 +1,7 @@
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\SortingPlayground\SortingPlayground\bin\Debug\SortingPlayground.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\SortingPlayground\SortingPlayground\bin\Debug\SortingPlayground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\SortingPlayground\SortingPlayground\bin\Debug\SortingPlayground.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\SortingPlayground\SortingPlayground\obj\Debug\SortingPlayground.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\SortingPlayground\SortingPlayground\obj\Debug\SortingPlayground.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\SortingPlayground\SortingPlayground\obj\Debug\SortingPlayground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\SortingPlayground\SortingPlayground\obj\Debug\SortingPlayground.pdb

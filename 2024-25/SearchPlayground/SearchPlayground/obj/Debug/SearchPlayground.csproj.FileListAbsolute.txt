@@ -1,0 +1,7 @@
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\2024-2025\Oktavy\9 - 8.11.2024\SearchPlayground\SearchPlayground\bin\Debug\SearchPlayground.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\2024-2025\Oktavy\9 - 8.11.2024\SearchPlayground\SearchPlayground\bin\Debug\SearchPlayground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\2024-2025\Oktavy\9 - 8.11.2024\SearchPlayground\SearchPlayground\bin\Debug\SearchPlayground.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\2024-2025\Oktavy\9 - 8.11.2024\SearchPlayground\SearchPlayground\obj\Debug\SearchPlayground.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\2024-2025\Oktavy\9 - 8.11.2024\SearchPlayground\SearchPlayground\obj\Debug\SearchPlayground.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\2024-2025\Oktavy\9 - 8.11.2024\SearchPlayground\SearchPlayground\obj\Debug\SearchPlayground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\Gymvod_23-24\2024-2025\Oktavy\9 - 8.11.2024\SearchPlayground\SearchPlayground\obj\Debug\SearchPlayground.pdb
