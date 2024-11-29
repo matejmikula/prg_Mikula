@@ -5,3 +5,10 @@ H:\3D\Mikula\programovani\prg_Mikula\2D Array Playground\2D Array Playground\obj
 H:\3D\Mikula\programovani\prg_Mikula\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.csproj.CoreCompileInputs.cache
 H:\3D\Mikula\programovani\prg_Mikula\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.exe
 H:\3D\Mikula\programovani\prg_Mikula\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\2D Array Playground\2D Array Playground\bin\Debug\2D Array Playground.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\2D Array Playground\2D Array Playground\bin\Debug\2D Array Playground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\2D Array Playground\2D Array Playground\bin\Debug\2D Array Playground.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\2D Array Playground\2D Array Playground\obj\Debug\2D Array Playground.pdb
