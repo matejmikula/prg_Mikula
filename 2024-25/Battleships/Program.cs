@@ -15,7 +15,6 @@ namespace Battleships
         static bool submarinePlaced = false;
         static bool destroyerPlaced = false;
         static bool kosatkaPlaced = false;
-        static bool shipshot = false;
 
         static void Main(string[] args)
         {
@@ -28,8 +27,8 @@ namespace Battleships
             while (true)
             {
                 //znova kontrola zda nejsou lodě položené, na konci place tahu to breakne loop a pošle hráče na tah střelby
-                if (carrierPlaced && battleshipPlaced && cruiserPlaced && submarinePlaced && destroyerPlaced)
-                { 
+                if (carrierPlaced && battleshipPlaced && cruiserPlaced && submarinePlaced && destroyerPlaced && kosatkaPlaced)
+                {
                     Console.WriteLine("All ships have been placed. Moving to the attack phase.");
                     break;
                 }
@@ -77,11 +76,11 @@ namespace Battleships
                 Console.WriteLine($"You selected Row: {row} (Index: {rowIndex}), Column: {column} (Index: {colIndex}).");
                 Console.WriteLine("Which ship do you want to place?");
                 Console.WriteLine("Kosatka [2/4, K]");
-                Console.WriteLine("Carrier [1/5,C]");
-                Console.WriteLine("Battleship [1/4,B]");
-                Console.WriteLine("Cruiser [1/3,R]");
-                Console.WriteLine("Submarine [1/3,S]");
-                Console.WriteLine("Destroyer [1/2,D]");
+                Console.WriteLine("Carrier [1/5, C]");
+                Console.WriteLine("Battleship [1/4, B]");
+                Console.WriteLine("Cruiser [1/3, R]");
+                Console.WriteLine("Submarine [1/3, S]");
+                Console.WriteLine("Destroyer [1/2, D]");
 
                 string shipInput = Console.ReadLine().ToLower(); // zjistí jakou loď chce hráč položit
 
@@ -91,7 +90,7 @@ namespace Battleships
                     continue;
                 }
 
-                if ((shipInput == "carrier" && carrierPlaced) || //kontrola zda loď není už položena (kvůli dalším kolům v loopu)
+                if ((shipInput == "carrier" && carrierPlaced) ||
                     (shipInput == "battleship" && battleshipPlaced) ||
                     (shipInput == "cruiser" && cruiserPlaced) ||
                     (shipInput == "submarine" && submarinePlaced) ||
@@ -120,7 +119,7 @@ namespace Battleships
                     case "kosatka":
                         shipLength = 4;
                         shipWidth = 2;
-                        shipSymbol = 'Ķ';
+                        shipSymbol = 'K';
                         break;
                     case "carrier":
                         shipLength = 5;
@@ -149,10 +148,10 @@ namespace Battleships
                         break;
                     default:
                         Console.WriteLine("Invalid ship. Please try again.");
-                        continue; 
+                        continue;
                 }
 
-                if (!CanPlaceShip(board, rowIndex, colIndex, shipLength, shipWidth,direction)) //kontrola zda by loď na určitém indexu v určitém směru nebyla mimo hrací pole
+                if (!CanPlaceShip(board, rowIndex, colIndex, shipLength, shipWidth, direction)) //kontrola zda by loď na určitém indexu v určitém směru nebyla mimo hrací pole
                 {
                     Console.WriteLine("Cannot place the ship here. Check for overlaps or out-of-bounds.");
                     continue;
@@ -160,7 +159,7 @@ namespace Battleships
 
                 PlaceShip(board, rowIndex, colIndex, shipLength, shipWidth, direction, shipSymbol); // funkce pro položení lodi
 
-                switch (shipInput) // zapíše, že jsou lodě už položené, aby se nemohli pokládat znova, na začatku loopu ošetřeno
+                switch (shipInput)
                 {
                     case "carrier": carrierPlaced = true; break;
                     case "battleship": battleshipPlaced = true; break;
@@ -175,14 +174,10 @@ namespace Battleships
 
             BotPlaceShips(boardBot); // zobrazení pole bota (samozřejmě bez ukázání jeho lodí
 
+            int shipCellsEnemy = 25; //kopletní počet bodů na kterých stojí lodě
 
             while (true) //loop pro střelbu
             {
-                if (shipShot)
-                {
-                    Console.WriteLine("All ships have been placed. Moving to the attack phase.");
-                    break;
-                }
                 Console.WriteLine("Enter a cell (e.g., a5), where you want to shoot or type 'quit' to exit:");
                 string cellInput = Console.ReadLine().ToLower(); //stejná funkce jako zvolení souřadnic pro pokládání lodí
 
@@ -204,7 +199,7 @@ namespace Battleships
                     continue;
                 }
 
-                char row = cellInput[0]; // opět... už to nebudu znova psát je to to samé co u pokládání lodí
+                char row = cellInput[0];
                 string columnPart = cellInput.Substring(1);
 
                 if (!rows.Contains(row))
@@ -237,6 +232,13 @@ namespace Battleships
                 {
                     Console.WriteLine($"Hit! You hit a {boardBot[rowIndex, colIndex]}."); // při střílení na pole pokud tam je loď na X = trefeno
                     boardBot[rowIndex, colIndex] = 'X';
+                    shipCellsEnemy--; // snížení bodů na kterých stojí lodě
+                }
+
+                if (shipCellsEnemy == 0)
+                {
+                    Console.WriteLine("You win! All of the enemy's ships have been sunk!");
+                    break;
                 }
 
                 Console.WriteLine("You shoot here:"); //zobrazení obou polí aby hráč věděl jak na tom je on a jak soupeř
@@ -244,7 +246,6 @@ namespace Battleships
                 BotShoot(board);
                 Console.WriteLine("Bot shoots here:");
                 DisplayBoard(board);
-
             }
         }
 
@@ -267,7 +268,7 @@ namespace Battleships
                 Console.Write($"{i,3}"); // formátování tak aby mezi nimi byla vždy délka mezery 3
             }
             Console.WriteLine();
-            
+
             // to samé akorát pro sloupec vlevo s čísly
             for (int i = 0; i < gridSize; i++)
             {
@@ -280,9 +281,9 @@ namespace Battleships
             }
         }
 
-        static void DisplayBoardBot(char[,] boardBot) //funkce pro zobrazení pole protihráče v konzoli
+        static void DisplayBoardBot(char[,] boardBot) //funkce pro zobrazení pole proti
         {
-            Console.Write("   "); //popsáno dříve v displayBoard
+            Console.Write("   ");
             for (int i = 1; i <= gridSize; i++)
             {
                 Console.Write($"{i,3}");
@@ -294,100 +295,40 @@ namespace Battleships
                 Console.Write($"{rows[i]}  ");
                 for (int j = 0; j < gridSize; j++)
                 {
-                    if (boardBot[i, j] == 'X' || boardBot[i, j] == 'O')
+                    char cell = boardBot[i, j];
+                    if (cell != 'X' && cell != 'O')
                     {
-                        Console.Write($"[{boardBot[i, j]}]");
+                        cell = '.';
                     }
-                    else
-                    {
-                        Console.Write("[.]");
-                    }
+                    Console.Write($"[{cell}]");
                 }
                 Console.WriteLine();
             }
         }
 
-        static void BotShoot(char[,] board) // funkce pro střelbu bota
+        static bool CanPlaceShip(char[,] board, int startRow, int startCol, int length, int width, string direction)
         {
-            Random random = new Random(); // vytvoření nového random
-            while (true)
+            if (direction == "horizontal")
             {
-                int row = random.Next(0, gridSize); // náhodné vybrání souřadnice v řádku
-                int col = random.Next(0, gridSize); // to samé ale ve sloupci
+                if (startCol + length > gridSize) return false;
 
-                if (board[row, col] == '.' || char.IsLetter(board[row, col])) 
+                for (int i = 0; i < length; i++)
                 {
-                    if (board[row, col] == '.') // pokud bot vytřelí na prázdné pole se znakem [.] pak se zapíše nový znak [O]
+                    for (int j = 0; j < width; j++)
                     {
-                        Console.WriteLine($"Bot shoots at {rows[row]}{col + 1}: Miss!");
-                        board[row, col] = 'O';
-                    }
-                    else // pokud se bot trefí do nějaké z lodí tak se její znak přepíše na [X]
-                    {
-                        Console.WriteLine($"Bot shoots at {rows[row]}{col + 1}: Hit {board[row, col]}!");
-                        board[row, col] = 'X';
-                    }
-                    break;
-                }
-            }
-        }
-
-        static void BotPlaceShips(char[,] boardBot) //funkce pro place lodí bota 
-        {
-            var ships = new List<(string name, int length,int width, char symbol)> //list lodí pro bota
-            {
-                ("Carrier", 5, 1,'C'),
-                ("Battleship", 4, 1, 'B'),
-                ("Cruiser", 3, 1,'R'),
-                ("Submarine", 3, 1,'S'),
-                ("Destroyer", 2, 1, 'D'),
-                ("Kosatka", 4, 2, 'K')
-            };
-
-            Random random = new Random(); // opět vytvoření nového randomu pro place lodí
-
-            foreach (var ship in ships)
-            {
-                bool placed = false; //pokud nějaká z lodí není placenutá loop se opakuje
-
-                while (!placed) 
-                {
-                    int startRow = random.Next(0, gridSize); //random výběr souřadnic opět
-                    int startCol = random.Next(0, gridSize);
-                    string direction = random.Next(0, 2) == 0 ? "horizontal" : "vertical"; // random výběr zda jsou horizontálně nebo vertikálně
-
-                    if (CanPlaceShip(boardBot, startRow, startCol, ship.length, ship.width, direction)) // kontrola zda se souřadnice lodí nepřekrívají a že je loď v souřadnicích pole
-                    {
-                        PlaceShip(boardBot, startRow, startCol, ship.length, ship.width, direction, ship.symbol); // položení lodi
-                        placed = true; //pokud jsou všechny lodě položené ukončí loop
+                        if (board[startRow + j, startCol + i] != '.') return false;
                     }
                 }
             }
-        }
-
-        static bool CanPlaceShip(char[,] board, int startRow, int startCol, int length, int width, string direction) // funkce pro kontrolu zda lze loď položit
-        {
-            if (direction == "vertical") // pokud je loď vertikálně
+            else if (direction == "vertical")
             {
-                if (startRow + length > gridSize || startCol + width > gridSize) return false; //kontrola že loď není mimo hrací pole
+                if (startRow + length > gridSize) return false;
 
-                for (int i = startRow; i < startRow + length; i++) //kontrola pokud tato loď lze položit na určených souřadnicícha v určeném směru
+                for (int i = 0; i < length; i++)
                 {
-                    for (int j = startCol; j < startCol + width; j++)
+                    for (int j = 0; j < width; j++)
                     {
-                        if (board[i, j] != '.') return false;
-                    }
-                }
-            }
-            else if (direction == "horizontal") // to samé ale pro horizontální položení
-            {
-                if (startCol + length > gridSize || startRow + width > gridSize) return false;
-
-                for (int i = startRow; i < startRow + width; i++)
-                {
-                    for (int j = startCol; j < startCol + length; j++)
-                    {
-                        if (board[i, j] != '.') return false;
+                        if (board[startRow + i, startCol + j] != '.') return false;
                     }
                 }
             }
@@ -397,24 +338,75 @@ namespace Battleships
 
         static void PlaceShip(char[,] board, int startRow, int startCol, int length, int width, string direction, char symbol)
         {
-            if (direction == "vertical") // položení lodi
+            if (direction == "horizontal")
             {
-                for (int i = startRow; i < startRow + length; i++) 
+                for (int i = 0; i < length; i++)
                 {
-                    for (int j = startCol; j < startCol + width; j++) 
+                    for (int j = 0; j < width; j++)
                     {
-                        board[i, j] = symbol; //napsání správného smybolu místo [.] na souřadnice kam chceme položit loď
+                        board[startRow + j, startCol + i] = symbol;
                     }
                 }
             }
-            else if (direction == "horizontal") //to samé horizontalně
+            else if (direction == "vertical")
             {
-                for (int i = startRow; i < startRow + width; i++) 
+                for (int i = 0; i < length; i++)
                 {
-                    for (int j = startCol; j < startCol + length; j++)
+                    for (int j = 0; j < width; j++)
                     {
-                        board[i, j] = symbol;
+                        board[startRow + i, startCol + j] = symbol;
                     }
+                }
+            }
+        }
+
+        static void BotPlaceShips(char[,] boardBot)
+        {
+            // Simple bot logic for placing ships randomly
+            Random rand = new Random();
+            int[] shipLengths = { 5, 4, 3, 3, 2 };
+            char[] shipSymbols = { 'C', 'B', 'R', 'S', 'D' };
+
+            for (int s = 0; s < shipLengths.Length; s++)
+            {
+                bool placed = false;
+
+                while (!placed)
+                {
+                    int row = rand.Next(gridSize);
+                    int col = rand.Next(gridSize);
+                    string direction = rand.Next(2) == 0 ? "horizontal" : "vertical";
+
+                    if (CanPlaceShip(boardBot, row, col, shipLengths[s], 1, direction))
+                    {
+                        PlaceShip(boardBot, row, col, shipLengths[s], 1, direction, shipSymbols[s]);
+                        placed = true;
+                    }
+                }
+            }
+        }
+
+        static void BotShoot(char[,] board)
+        {
+            Random rand = new Random();
+            bool shot = false;
+
+            while (!shot)
+            {
+                int row = rand.Next(gridSize);
+                int col = rand.Next(gridSize);
+
+                if (board[row, col] == '.') // Bot targets unexplored cells
+                {
+                    Console.WriteLine($"Bot missed at {rows[row]}{col + 1}.");
+                    board[row, col] = 'O';
+                    shot = true;
+                }
+                else if (board[row, col] != 'X' && board[row, col] != 'O') // Bot hits a ship
+                {
+                    Console.WriteLine($"Bot hit your ship at {rows[row]}{col + 1}!");
+                    board[row, col] = 'X';
+                    shot = true;
                 }
             }
         }
