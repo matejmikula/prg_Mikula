@@ -28,16 +28,18 @@ namespace Battleships
             char[,] boardBot = new char[gridSize, gridSize];
             bool exitGame = false;
 
-            InitializeBoard(board); // vytvoření přímo pole
-            InitializeBoard(boardBot);
+            
             while (!exitGame)
             {
+                InitializeBoard(board); // vytvoření přímo pole
+                InitializeBoard(boardBot);
                 while (!exitGame)
                 {
                     //znova kontrola zda nejsou lodě položené, na konci place tahu to breakne loop a pošle hráče na tah střelby
                     if (carrierPlaced && battleshipPlaced && cruiserPlaced && submarinePlaced && destroyerPlaced && kosatkaPlaced)
                     {
                         Console.WriteLine("All ships have been placed. Moving to the attack phase.");
+                        Console.Write("\n");
                         break;
                     }
 
@@ -177,6 +179,7 @@ namespace Battleships
                         case "destroyer": destroyerPlaced = true; break;
                         case "kosatka": kosatkaPlaced = true; break;
                     }
+                    availableShips.RemoveAll(s => s.ToLower().Contains(shipInput));
 
                     Console.WriteLine($"{shipInput} placed successfully!");
                 }
@@ -274,8 +277,9 @@ namespace Battleships
                     Console.WriteLine($"remaining cells to destroy: {shipCellsEnemy}");
                     Console.WriteLine($"your remaining ship cellls: {shipCellsPlayer}");
 
+                    
                 }
-                if (shipCellsEnemy == 0 && shipCellsPlayer == 0)
+                if (shipCellsEnemy == 0 || shipCellsPlayer == 0)
                 {
                     Console.WriteLine("co you want to play another game? (Y/N)");
                     string newGameW = Console.ReadLine().ToLower();
@@ -284,6 +288,14 @@ namespace Battleships
                         break;
                     }
                 }
+                carrierPlaced = false;
+                battleshipPlaced = false;
+                cruiserPlaced = false;
+                submarinePlaced = false;
+                destroyerPlaced = false;
+                kosatkaPlaced = false;
+                availableShips = new List<string> { "Kosatka [2/4, k]", "carrier [1/5, C]", "battleship[1/4, B]", "cruiser[1/3, R]", "submarine[1/3, S]", "destroyer[1/2, D]" };
+
             }
         }
             
