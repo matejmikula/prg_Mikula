@@ -44,13 +44,54 @@ namespace ClassPlayground
         public string currency;
         public double balance;
 
-        public double deposite()
+        // Constructor to initialize bank account
+        public BankAccount(string holderName, string currency)
         {
-            Random Balance = new Random();
-            double UserBalance = Convert.ToDouble(Balance);
-            double UserDeposite = Convert.ToDouble(Console.ReadLine());
-            double FinalBalance = UserBalance + UserDeposite;
-            return FinalBalance;
+            Random random = new Random();
+            accountNumber = random.Next(100000000, 1000000000); // Generate a random account number
+            this.holderName = holderName;
+            this.currency = currency;
+            this.balance = 0.0;
+        }
+
+        public void Deposit(double amount)
+        {
+            if (amount > 0)
+            {
+                balance += amount;
+                Console.WriteLine($"Deposited {amount} {currency}. New balance: {balance} {currency}.");
+            }
+            else
+            {
+                Console.WriteLine("Deposit amount must be positive.");
+            }
+        }
+
+        public void Withdraw(double amount)
+        {
+            if (amount > 0 && amount <= balance)
+            {
+                balance -= amount;
+                Console.WriteLine($"Withdrew {amount} {currency}. New balance: {balance} {currency}.");
+            }
+            else
+            {
+                Console.WriteLine("Insufficient funds or invalid amount.");
+            }
+        }
+
+        public void Transfer(double amount, BankAccount targetAccount)
+        {
+            if (amount > 0 && amount <= balance)
+            {
+                balance -= amount;
+                targetAccount.balance += amount;
+                Console.WriteLine($"Transferred {amount} {currency} to account {targetAccount.accountNumber}. New balance: {balance} {currency}.");
+            }
+            else
+            {
+                Console.WriteLine("Insufficient funds or invalid amount.");
+            }
         }
     }
 }

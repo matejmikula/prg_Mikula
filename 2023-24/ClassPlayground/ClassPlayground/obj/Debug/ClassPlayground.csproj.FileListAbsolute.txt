@@ -5,3 +5,10 @@ H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\obj\Debug\C
 H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.csproj.CoreCompileInputs.cache
 H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.exe
 H:\3D\Mikula\programovani\prg_Mikula\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\ClassPlayground\ClassPlayground\bin\Debug\ClassPlayground.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\ClassPlayground\ClassPlayground\bin\Debug\ClassPlayground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\ClassPlayground\ClassPlayground\bin\Debug\ClassPlayground.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2023-24\ClassPlayground\ClassPlayground\obj\Debug\ClassPlayground.pdb
