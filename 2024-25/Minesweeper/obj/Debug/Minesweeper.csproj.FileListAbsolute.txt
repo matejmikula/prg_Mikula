@@ -1,0 +1,7 @@
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\Minesweeper\bin\Debug\Minesweeper.exe.config
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\Minesweeper\bin\Debug\Minesweeper.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\Minesweeper\bin\Debug\Minesweeper.pdb
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\Minesweeper\obj\Debug\Minesweeper.csproj.AssemblyReference.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\Minesweeper\obj\Debug\Minesweeper.csproj.CoreCompileInputs.cache
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\Minesweeper\obj\Debug\Minesweeper.exe
+C:\Users\obiwa\OneDrive\Dokumenty\PROGRAMKO_2324\prg_Mikula\2024-25\Minesweeper\obj\Debug\Minesweeper.pdb
