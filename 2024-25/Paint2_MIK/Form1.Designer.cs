@@ -50,6 +50,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textButton = new System.Windows.Forms.RadioButton();
             this.changeFontButton = new System.Windows.Forms.Button();
+            this.starButton = new System.Windows.Forms.RadioButton();
+            this.starFilledButton = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.sizeBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.opacityBar)).BeginInit();
             this.SuspendLayout();
@@ -119,7 +121,7 @@
             // penButton
             // 
             this.penButton.AutoSize = true;
-            this.penButton.Location = new System.Drawing.Point(432, 58);
+            this.penButton.Location = new System.Drawing.Point(379, 33);
             this.penButton.Name = "penButton";
             this.penButton.Size = new System.Drawing.Size(62, 24);
             this.penButton.TabIndex = 6;
@@ -130,7 +132,7 @@
             // sprayButton
             // 
             this.sprayButton.AutoSize = true;
-            this.sprayButton.Location = new System.Drawing.Point(432, 106);
+            this.sprayButton.Location = new System.Drawing.Point(379, 63);
             this.sprayButton.Name = "sprayButton";
             this.sprayButton.Size = new System.Drawing.Size(75, 24);
             this.sprayButton.TabIndex = 7;
@@ -158,7 +160,7 @@
             // ellipseButton
             // 
             this.ellipseButton.AutoSize = true;
-            this.ellipseButton.Location = new System.Drawing.Point(613, 140);
+            this.ellipseButton.Location = new System.Drawing.Point(479, 69);
             this.ellipseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ellipseButton.Name = "ellipseButton";
             this.ellipseButton.Size = new System.Drawing.Size(73, 24);
@@ -171,7 +173,7 @@
             // rectButton
             // 
             this.rectButton.AutoSize = true;
-            this.rectButton.Location = new System.Drawing.Point(613, 18);
+            this.rectButton.Location = new System.Drawing.Point(479, 35);
             this.rectButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rectButton.Name = "rectButton";
             this.rectButton.Size = new System.Drawing.Size(107, 24);
@@ -183,7 +185,7 @@
             // ellipseFillButton
             // 
             this.ellipseFillButton.AutoSize = true;
-            this.ellipseFillButton.Location = new System.Drawing.Point(613, 106);
+            this.ellipseFillButton.Location = new System.Drawing.Point(613, 69);
             this.ellipseFillButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ellipseFillButton.Name = "ellipseFillButton";
             this.ellipseFillButton.Size = new System.Drawing.Size(114, 24);
@@ -196,7 +198,7 @@
             // rectFillButton
             // 
             this.rectFillButton.AutoSize = true;
-            this.rectFillButton.Location = new System.Drawing.Point(613, 58);
+            this.rectFillButton.Location = new System.Drawing.Point(613, 35);
             this.rectFillButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rectFillButton.Name = "rectFillButton";
             this.rectFillButton.Size = new System.Drawing.Size(148, 24);
@@ -220,7 +222,7 @@
             // 
             // helpButton
             // 
-            this.helpButton.Location = new System.Drawing.Point(214, 106);
+            this.helpButton.Location = new System.Drawing.Point(214, 144);
             this.helpButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.helpButton.Name = "helpButton";
             this.helpButton.Size = new System.Drawing.Size(123, 57);
@@ -263,7 +265,7 @@
             // textButton
             // 
             this.textButton.AutoSize = true;
-            this.textButton.Location = new System.Drawing.Point(432, 152);
+            this.textButton.Location = new System.Drawing.Point(379, 93);
             this.textButton.Name = "textButton";
             this.textButton.Size = new System.Drawing.Size(64, 24);
             this.textButton.TabIndex = 19;
@@ -274,13 +276,37 @@
             // 
             // changeFontButton
             // 
-            this.changeFontButton.Location = new System.Drawing.Point(214, 184);
+            this.changeFontButton.Location = new System.Drawing.Point(214, 81);
             this.changeFontButton.Name = "changeFontButton";
             this.changeFontButton.Size = new System.Drawing.Size(123, 55);
             this.changeFontButton.TabIndex = 20;
             this.changeFontButton.Text = "Text Font";
             this.changeFontButton.UseVisualStyleBackColor = true;
             this.changeFontButton.Click += new System.EventHandler(this.changeFontButton_Click);
+            // 
+            // starButton
+            // 
+            this.starButton.AutoSize = true;
+            this.starButton.Location = new System.Drawing.Point(479, 101);
+            this.starButton.Name = "starButton";
+            this.starButton.Size = new System.Drawing.Size(64, 24);
+            this.starButton.TabIndex = 21;
+            this.starButton.TabStop = true;
+            this.starButton.Text = "Star";
+            this.starButton.UseVisualStyleBackColor = true;
+            this.starButton.CheckedChanged += new System.EventHandler(this.starButton_CheckedChanged);
+            // 
+            // starFilledButton
+            // 
+            this.starFilledButton.AutoSize = true;
+            this.starFilledButton.Location = new System.Drawing.Point(613, 101);
+            this.starFilledButton.Name = "starFilledButton";
+            this.starFilledButton.Size = new System.Drawing.Size(105, 24);
+            this.starFilledButton.TabIndex = 22;
+            this.starFilledButton.TabStop = true;
+            this.starFilledButton.Text = "Star Filled";
+            this.starFilledButton.UseVisualStyleBackColor = true;
+            this.starFilledButton.CheckedChanged += new System.EventHandler(this.starFilledButton_CheckedChanged);
             // 
             // Form1
             // 
@@ -289,6 +315,8 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1628, 744);
+            this.Controls.Add(this.starFilledButton);
+            this.Controls.Add(this.starButton);
             this.Controls.Add(this.changeFontButton);
             this.Controls.Add(this.textButton);
             this.Controls.Add(this.label1);
@@ -342,6 +370,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.RadioButton textButton;
         private System.Windows.Forms.Button changeFontButton;
+        private System.Windows.Forms.RadioButton starButton;
+        private System.Windows.Forms.RadioButton starFilledButton;
     }
 }
 
